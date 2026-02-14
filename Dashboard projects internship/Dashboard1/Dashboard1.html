@@ -40,7 +40,7 @@
         cursor: pointer;
       }
 
-      .sidebar {
+      .sidebar-content{
         border-right: 1px solid rgba(255, 255, 255, 0.12);
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@
         left: 0;
       }
       
-      .sidebar-content{
+      .sidebar{
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -198,74 +198,118 @@
       }
       
       @media (max-width: 600px) {
-        
         .dashboard {
-          grid-template-columns:60px 1fr;
+          grid-template-columns:1fr;
           font-size: 10px;
         }
-
-        .sidebar-button{
-          display: block;
-        }
-
         #sidebar-menu{
         position: absolute;
         opacity: 0;
         pointer-events: none;
       }
-
+        .sidebar-button{
+          display: block;
+          z-index: 1000;
+        }
+        .sidebar-content{
+          background-color: #101010;
+        }
         .sidebar{
           position: fixed;
           top: 0;
           left: 0;
           transform: translateX(-100%);
           transition: transform 0.3s ease;
-          z-index: 99;
+          z-index: 999;
           width: 280px;
+          background-color: #101010;
           box-shadow: 2px 0 10px rgba(0,0,0,0.5)
         }
-
         #sidebar-menu:checked ~ .sidebar{
           transform: translateX(0);
         }
-
-        .main-content{
-          padding: 20px 20px 20px 20px;
-          width: 100%;
+        #sidebar-menu:checked ~ .main-content::before{
+          content: '';
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0,0,0,0.5);
+          z-index: 998;
         }
-
+        .sidebar-nav li{
+          padding: 0 20px;
+          & a{
+            font-size: 14px;
+          }
+        }
+        .sidebar-section h2{
+          padding: 20px;
+          font-size: 18px;
+        }
+        .main-content{
+          width: 100%;
+          margin-left: 0;
+        }
         .logo_img {
           aspect-ratio: 1 / 1;
+          width: 40px;
+          height: 40px;
         }
-        
         .navbar{
           flex-wrap: wrap;
           gap: 15px;
+          margin-left: 50px;
         }
-        
         .nav-links{
           width: 100%;
           order: 3;
-          justify-content: center;
+          padding: 10px 0;
+          & li{
+            margin: 0 5px;
+          }
+          & a{
+            padding: 6px 10px;
+            font-size: 14px;
+          }
         }
-
         .search-container {
           margin-left: auto;
+          width: 200px;
         }
-
+        .search-input{
+          width: 100%;
+          padding: 8px 0 8px 30px;
+        }
         .categories-grid {
           flex-wrap: wrap;
+          justify-content: flex-start;
+          gap: 8px;
+          margin-top: 20px;
         }
         .category-card {
-          display: flex;
           align-items: center;
+          padding: 6px 12px;
+          font-size: 12px;
+          border-right: 1px solid rgba(253, 253, 253, 0.12);
+          border-left: 1px solid rgba(253, 253, 253, 0.12);
+          white-space: nowrap;
+          & svg{
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+          }
         }
         .gallery-container {
           grid-template-columns: 1fr;
         }
         .column-img img {
           vertical-align: middle;
-          object-fit: contain;
+          object-fit: cover;
+          width: 100%;
+          height: auto;
+          border-radius: 4px;
         }
       }
     </style>
@@ -281,8 +325,8 @@
         </svg>
       </label>
       
-      <div class="sidebar-content">
-        <aside class="sidebar">
+      <aside class="sidebar">
+        <div class="sidebar-content">
           <div class="sidebar-section">
             <h2>Dashboard</h2>
           </div>
@@ -298,8 +342,7 @@
               <li>
                 <a href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"/>      
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                  <g id="SVGRepo_iconCarrier"> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/> <path d="M17 2V8.8076C17 9.78253 17 10.27 16.8709 10.5607C16.5766 11.2233 15.8506 11.5805 15.1461 11.4095C14.8369 11.3344 14.4507 11.037 13.6782 10.4422C13.2421 10.1064 13.024 9.9385 12.797 9.83985C12.2886 9.61899 11.7114 9.61899 11.203 9.83985C10.976 9.9385 10.7579 10.1064 10.3218 10.4422C9.5493 11.037 9.16307 11.3344 8.85391 11.4095C8.14942 11.5805 7.42342 11.2233 7.12914 10.5607C7 10.27 7 9.78253 7 8.8076V2" stroke="#FFFFFF" stroke-width="1.5"/> </g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>                  <g id="SVGRepo_iconCarrier"> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/> <path d="M17 2V8.8076C17 9.78253 17 10.27 16.8709 10.5607C16.5766 11.2233 15.8506 11.5805 15.1461 11.4095C14.8369 11.3344 14.4507 11.037 13.6782 10.4422C13.2421 10.1064 13.024 9.9385 12.797 9.83985C12.2886 9.61899 11.7114 9.61899 11.203 9.83985C10.976 9.9385 10.7579 10.1064 10.3218 10.4422C9.5493 11.037 9.16307 11.3344 8.85391 11.4095C8.14942 11.5805 7.42342 11.2233 7.12914 10.5607C7 10.27 7 9.78253 7 8.8076V2" stroke="#FFFFFF" stroke-width="1.5"/> </g>
                   </svg>Bookmarks</a>
               </li>
               <li>
@@ -343,9 +386,8 @@
                 </li>
               </ul>
             </nav>
-
+          </div>
       </aside>
-      </div>
       
 
       <main class="main-content">
