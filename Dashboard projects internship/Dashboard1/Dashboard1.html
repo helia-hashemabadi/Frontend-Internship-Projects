@@ -255,12 +255,34 @@
         display: grid;
         grid-template-columns: 180px 1fr;
       }
-      /* .sidebar-button{
+      .sidebar-button{
         display: none;
       }
       .sidebar{
-        transform: translateX(0);
-      } */
+        position: sticky;
+        top:0;
+        left: 0;
+        transform: none;
+        border-right: 2px solid rgba(255, 255, 255, 0.12);
+        min-height: 100vh;
+        transition: none;
+      }
+      .sidebar-content{
+        padding: 20px 0;
+      }
+      .sidebar-section {
+        & h2 {
+          font-size:25px;
+          margin-bottom: 40px;
+        }
+      }
+      .navbar{
+        justify-content: space-between;
+      }
+      .search-container{
+        height: 40px;
+        width:255px;
+      }
     }
     
     </style>
