@@ -36,6 +36,9 @@
           cursor: pointer;
           top: 16px;
           left: 16px;
+          background-color: #101010;
+          border-radius: 8px;
+          box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
         }
 
       #sidebar-menu:checked ~ .sidebar-button{
@@ -98,8 +101,9 @@
 
       .navbar{
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         flex-wrap: wrap;
+        justify-content: center;
         gap:12px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.12);
         margin-bottom: 30px;
@@ -112,7 +116,7 @@
         width: 42px;
         border: 1px solid rgba(255, 255, 255, 0.32);
         border-radius: 8px;
-        margin-left: 50px;
+        margin-top: 5px;
       }
 
       .nav-links{
@@ -174,6 +178,40 @@
           margin-right: 4px;
         } 
       }
+      .gallery-container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns:1fr;
+        margin-top: 30px;
+        gap: 10px;
+      }
+
+      .column-img img {
+          margin-bottom: 5px;
+          aspect-ratio: 1 / 1;
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          padding: 5px;
+        }
+
+        .relative {
+        position: relative;
+      }
+      .absolute {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+      }
+
+      .flex-1 {
+        flex: 1;
+      }
+
+      @media (min-width:320px) and (max-width:768px)
 
       /* @media (min-width:1200px){
         .dashboard {
@@ -339,22 +377,9 @@
           height: auto;
           object-fit: cover;
         }
+          
       } */
-      .relative {
-        position: relative;
-      }
-      .absolute {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        top: 50%;
-        left: 8px;
-        transform: translateY(-50%);
-      }
-
-      .flex-1 {
-        flex: 1;
-      }
+      
 
       /* @media (min-width:1200px) {
         .dashboard {
@@ -1184,7 +1209,7 @@
         </div>
 
         <div class="gallery-container">
-          <!-- <div class="column-img">
+          <div class="column-img">
             <img src="./photo/self.png" />
             <img src="./photo/por.png" />
           </div>
@@ -1198,7 +1223,7 @@
           <div class="column-img">
             <img src="./photo/por.png" />
             <img src="./photo/self.png" />
-          </div> -->
+          </div>
         </div>
       </main>
     </div>
