@@ -146,6 +146,35 @@
         border: none;
       }
 
+      .categories-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 20px;
+        }
+
+        .category-card {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 50vh;
+        border-right: 1px solid rgba(253, 253, 253, 0.12);
+        border-left: 1px solid rgba(253, 253, 253, 0.12);
+        padding: 6px 12px;
+        font-size: 12px;
+        text-align: center;
+        &:hover {
+          box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        }
+        
+        & svg {
+          width: 16px;
+          height: 16px;
+          margin-right: 4px;
+        } 
+      }
+
       /* @media (min-width:1200px){
         .dashboard {
         grid-template-columns: 180px 1fr;
@@ -386,6 +415,7 @@
           width: 100%;
           padding: 8px 0 8px 30px;
         }
+    
         .categories-grid {
           flex-wrap: wrap;
           justify-content: flex-start; 
