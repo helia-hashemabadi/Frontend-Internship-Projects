@@ -20,6 +20,7 @@
       .dashboard{
         display:block;
         width: 100%;
+        min-height: 100vh;
       }
 
       #sidebar-menu{
@@ -43,12 +44,9 @@
 
       .sidebar {
           position: fixed;
-          top: 0;
-          left: 0;
           transform: translateX(-100%);
           transition: transform 0.3s ease;
           z-index: 999;
-          width: 280px;
           background-color: #101010;
           border-right:1px solid rgba(255, 255, 255, 0.12);
         }
@@ -95,7 +93,7 @@
 
       .main-content{
         width: 100%;
-        padding:20px 16px;
+        padding:10px 8px;
       }
 
       .navbar{
@@ -119,7 +117,7 @@
 
       .nav-links{
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         list-style: none;
         & a{
           color:white;
@@ -1156,7 +1154,7 @@
         </div>
 
         <div class="gallery-container">
-          <div class="column-img">
+          <!-- <div class="column-img">
             <img src="./photo/self.png" />
             <img src="./photo/por.png" />
           </div>
@@ -1170,7 +1168,7 @@
           <div class="column-img">
             <img src="./photo/por.png" />
             <img src="./photo/self.png" />
-          </div>
+          </div> -->
         </div>
       </main>
     </div>
