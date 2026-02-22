@@ -7,40 +7,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Message Alert</title>
     <style>
-      *{
-        margin: 0;
-        padding: 0;
-        border: 0;
-      }
-
-      .alert{
-        padding-top: 4px;
-        margin-top: 200px;
-        margin-left: 24px;
-      }
 
       .alert-box{
         display: flex;
+        max-width: 24rem;
+        border-radius: 0.5rem;
         background-color: red;
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-          0 10px 10px -5px rgba(0, 0, 0, 0.04);
       }
-      
+
       .alert-logo{
+        height: 3rem;
+        width: 3rem;
       }
 
     </style>
   </head>
   <body>
-    <div class="alert">
-      <div class="alert-box">
-        <div class="alert-logo">
-          <img src="../assets/img/warning.svg" alt="alert" />
-        </div>
-        <div class="alert-body">
-          <h4 class="alert-title">Are You Sure?</h4>
-          <p class="alert-message">You are about to delete a post</p>
-        </div>
+    <div class="alert-box">
+      <div class="alert-logo">
+        <img src="../assets/img/warning.svg" alt="alert" />
+      </div>
+      <div class="alert-body">
+        <h4 class="alert-title">Are You Sure?</h4>
+        <p class="alert-message">You are about to delete a post</p>
       </div>
     </div>
   </body>
