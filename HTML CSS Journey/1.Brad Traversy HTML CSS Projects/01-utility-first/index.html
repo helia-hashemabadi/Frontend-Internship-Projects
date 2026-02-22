@@ -7,29 +7,47 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Message Alert</title>
     <style>
-      *{
-        padding: 0;
-        margin: 0;
+      body {
+        margin-top: 200px !important;
       }
-      .alert-box{
+      .alert {
         display: flex;
-        max-width: 380px;
-        padding: 8px;
+        max-width: 24rem;
+        margin: 0 auto;
+        padding: 24px;
         border-radius: 8px;
-        background-color: red;
+        background-color: #fff;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
       }
-
-      .alert-logo{
-        height: 100px;
-        width: 100px;
+      .alert-logo-wrap {
+        flex-shrink: 0;
       }
-
+      .alert-logo {
+        height: 48px;
+        width: 48px;
+      }
+      .alert-body {
+        margin-left: 24px;
+        padding-top: 4px;
+      }
+      .alert-title {
+        color: #1a202c;
+        font-size: 20px;
+        line-height: 1.25;
+        font-weight: 500;
+      }
+      .alert-message {
+        color: #718096;
+        font-size: 16px;
+        line-height: 1.5;
+      }
     </style>
   </head>
   <body>
-    <div class="alert-box">
-      <div class="alert-logo">
-        <img src="../assets/img/warning.svg" alt="alert" />
+    <div class="alert">
+      <div class="alert-logo-wrap">
+        <img class="alert-logo" src="../assets/img/warning.svg" alt="alert" />
       </div>
       <div class="alert-body">
         <h4 class="alert-title">Are You Sure?</h4>
