@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" > <!--to scroll smoothly and better-->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,25 +9,77 @@
   </head>
   <body>
     <!-- Hover State Styling -->
-
-    <!-- Focus State Styling -->
-
+    <button class="px-6 py-4 m-3 rounded-lg bg-black text-white hover:bg-red-600 hover:text-white">
+      Submit
+    </button>
+    <!--Focus State Styling -->
+    <button class="px-6 py-4 m-3 rounded-lg bg-black text-white focus:bg-green-600 focus:text-white">
+      Submit
+    </button>
     <!-- Active State Styling -->
-
+    <button class="px-6 py-4 m-3 rounded-lg bg-black text-white active:bg-blue-600 active:text-white">
+      Submit
+    </button>
     <!-- Styling based on parent state -->
-
+    <a href="" class="group block max-w-xs mx-auto rounded-lg p-6 shadow-lg bg-gray-300 hover:bg-green-300">
+      <h3 class="hover:text-red-700">Card Title</h3>
+      <p class="group-hover:text-blue-800">This is the text</p>
+    </a>
     <!-- Pseudo Classes -->
-
+    <ul>
+      <li class="first:bg-green-300 odd:bg-red-300 even:bg-gray-300">item 1</li>
+      <li class="first:bg-green-300 odd:bg-red-300 even:bg-gray-300">item 2</li>
+      <li class="first:bg-green-300 odd:bg-red-300 even:bg-gray-300">item 3</li>
+      <li class="first:bg-green-300 odd:bg-red-300 even:bg-gray-300">item 4</li>
+    </ul>
     <!-- Appearance -->
     <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
-
-    <!-- Cursor -->
-
-    <!-- Resize -->
-
+    <select class="appearance-none p-4 m-4 border-4 shadow-lg"> <!--it has different appearance in different browsers; so we use "appearance-none" to be the same in browsers-->
+      <option value="Yes">Yes</option>
+      <option value="Np">No</option>
+    </select>
+    <!-- Cursor --> 
+    <button class="px-6 py-4 m-3 rounded-lg p-6 shadow-lg bg-gray-300">Hello</button> <!--default has cursor:pointer-->
+    <button class="px-6 py-4 m-3 rounded-lg p-6 shadow-lg bg-gray-300 cursor-crosshair">Hello</button>
+    <button class="px-6 py-4 m-3 rounded-lg p-6 shadow-lg bg-gray-300 cursor-not-allowed">Hello</button>
+    <button class="px-6 py-4 m-3 rounded-lg p-6 shadow-lg bg-gray-300 cursor-wait">Hello</button>
     <!-- User Select -->
+    <div class="select-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, alias!</div> 
+    <div class="select-all">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, alias!</div> 
+    <div class="select-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, alias!</div> 
+    <div class="select-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, alias!</div> <!--default-->
 
+    <a href="#item" class="block my-6">Go To The Item</a>
     <!-- Smooth Scroll Example -->
+     <p class="text-blue-400">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+      Dicta, voluptas aliquid voluptatum nemo ex, aliquam at pariatur placeat ipsa vel 
+      reiciendis doloribus laudantium numquam quidem deleniti ipsam ea incidunt officiis!
+       A culpa, consequatur eveniet quos expedita quae temporibus et id tempora ullam officiis
+        accusamus dicta, ad exercitationem itaque in error dignissimos dolorum sunt? Rem, 
+        ipsum deleniti? Maxime facilis voluptatem itaque fugiat id quidem laboriosam dicta
+         magnam! Officia explicabo dignissimos autem fugiat minima nulla saepe quasi, quis 
+         illo nemo voluptate laborum voluptatem mollitia vero ex? Totam facere quia officia 
+         ab non laborum aliquam, officiis doloremque dolorem,
+       voluptatem sequi cumque perferendis cupiditate.
+     </p>
+     <div id="item">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+      Dicta, voluptas aliquid voluptatum nemo ex, aliquam at pariatur placeat ipsa vel 
+      reiciendis doloribus laudantium numquam quidem deleniti ipsam ea incidunt officiis!
+       A culpa, consequatur eveniet quos expedita quae temporibus et id tempora ullam officiis
+        accusamus dicta, ad exercitationem itaque in error dignissimos dolorum sunt? Rem, 
+        ipsum deleniti? Maxime facilis voluptatem itaque fugiat id quidem laboriosam dicta
+         magnam! Officia explicabo dignissimos autem fugiat minima nulla saepe quasi, quis 
+         illo nemo voluptate laborum voluptatem mollitia vero ex? Totam facere quia officia 
+         ab non laborum aliquam, officiis doloremque dolorem,
+       voluptatem sequi cumque perferendis cupiditate.
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+       Dicta, voluptas aliquid voluptatum nemo ex, aliquam at pariatur placeat ipsa vel 
+       reiciendis doloribus laudantium numquam quidem deleniti ipsam ea incidunt officiis!
+        A culpa, consequatur eveniet quos expedita quae temporibus et id tempora ullam officiis
+         accusamus dicta, ad exercitationem itaque in error dignissimos dolorum sunt? Rem,
+     </div>
   </body>
 </html>
 
