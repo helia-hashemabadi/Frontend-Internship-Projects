@@ -1,0 +1,48 @@
+Front-End vs Back-End Development:
+When we browse to a certain website, our web browser sends a request to the server where the website is hosted.
+When the server receives the request, it takes all the files that make up the website (such as index.html, style.css, script.js, images, etc.) and sends them back to the browser. This is called a response.
+So the server sends a response to the browser that contains all the files needed to display the website.
+Web browsers understand three main technologies:  
+HTML, CSS, and JavaScript.
+
+All websites that run in the browser are built using these three technologies.
+Once the browser receives the HTML, CSS, and JavaScript files from the server’s response, it reads the code and renders the website that the user is trying to access.
+The process of writing the code that runs in the browser is called Front-End Development.
+Front-end developers write the code that is displayed and executed in the user’s browser. This part is called the Front-End of the website.
+If the files that make up a website are sent directly to the browser exactly as they are stored on the server, without any processing or transformation, the website is called a Static Website.
+--------------------------------------
+Back-End Development
+In some websites, when a request is sent to the server, the server does more than just send files.
+For example, websites like Udemy, Instagram, or Amazon constantly update their data. These websites need a full application running on the server, and they usually rely on large databases.
+Developers use back-end programming languages that run on the server, such as:
+Python, Node.js, PHP, Java, or Ruby.
+These languages interact with the database, retrieve the required data, and assemble the final content of the page.
+After that, the server sends the generated result to the browser as a response.
+This part of the website runs on the server and is not visible to users, which is why it is often called the “invisible part” of the web application.
+When a website generates content dynamically using server-side logic and databases, it is called a Dynamic Website.
+-------------------------
+Static vs Dynamic Website:
+
+Static Website:
+The server simply sends fixed files (HTML, CSS, JavaScript) to the browser. The content usually does not change unless the developer manually edits the files.
+
+Dynamic Website:
+The server generates content dynamically using back-end code and databases before sending it to the browser. The content can change depending on the user, time, or data.
+---------------------------
+HTML, CSS, and JavaScript:
+
+HTML (HyperText Markup Language)
+HTML is responsible for the structure and content of a web page.
+It defines elements such as text, images, buttons, links, forms, and headings.
+HTML files are usually saved with the .html extension.
+You can think of HTML as the nouns of a website because it defines the things that exist on the page.
+
+CSS (Cascading Style Sheets)
+CSS is responsible for the presentation and design of the content.
+It controls how elements look and are laid out on the page, including colors, fonts, spacing, alignment, and positioning.
+CSS can be thought of as the adjectives of a website because it describes how things look.
+
+JavaScript
+JavaScript is the programming language of the front-end.
+It allows developers to add dynamic and interactive behavior to web pages and web applications, such as animations, form validation, sliders, popups, and real-time updates.
+JavaScript can be thought of as the verbs of a website because it controls what happens and how the page behaves.
