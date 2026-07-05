@@ -1,0 +1,5 @@
+/* External CSS =>When we have a lot of CSS code, it is better to 
+write External CSS => we separate out css code from html code  */
+h1 {
+  color: blue;
+}
