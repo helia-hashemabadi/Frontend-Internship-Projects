@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Basic Language of the Web: HTML</title>
+  </head>
+
+  <body>
+    <header>
+      <!--there are 6 hea3dings-->
+      <h1>The Code Magazine</h1>
+      <!--primary heading-->
+      <!--<nav> is navigation and it is use to putting these links into a group-->
+      <!--<nav> is a container as a parent element-->
+      <nav>
+        <!--before we used <div> in every element as a parent and container-->
+        <!-- nowadays we use different elements instead of <div> because of meaning and semantic element after html5 introduce them-->
+        <a href="Blog.html">Blog</a>
+        <a href="#">Challenges</a>
+        <a href="#">Flexbox</a>
+        <a href="#">CSS Grid</a>
+      </nav>
+      <!--<a> is an anchor element, but to make it a link,is the href property-->
+    </header>
+
+    <!--semantic html => what that element actually means and what it stands for? -->
+    <!--for example <b> is an element; but <strong> has a meaning and it is semantic element-->
+
+    <article>
+      <header>
+        <h2>The Basic Language of the Web: HTML</h2>
+        <!--secondary heading-->
+        <img
+          src="img/laura-jones.jpg"
+          alt="A Photo of Laura Jones"
+          height="50"
+          width="50"
+        />
+        <p>Posted by <b>Laura Jones</b> on Monday, June 21st 2027</p>
+        <!--the name is in bold style[<b></b>]-->
+        <!--in HTML5 we should write <strong> instead of <b> for styling sth bold-->
+        <img
+          src="img/post-img.jpg"
+          alt="HTML code on a screen"
+          width="500"
+          height="200"
+        />
+        <!--attributes are pieces of data that we can use to describe data -->
+        <!-- src is for the importing the image-->
+        <!-- alt is for describing the image what is it about-->
+      </header>
+      <p>
+        All modern websites and web applications are built using three
+        <i>fundamental </i>
+        technologies: HTML, CSS and JavaScript. These are the languages of the
+        web.
+      </p>
+      <!--<i> is for styling sth in italic-->
+      <!--in HTML5 we should write <em> instead of <i> for styling sth italic-->
+      <p>
+        In this post, let's focus on HTML. We will learn what HTML is all about,
+        and why you too should learn it.
+      </p>
+
+      <h3>What is HTML?</h3>
+      <p>
+        HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+        <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+        language that web developers use to structure and describe the content
+        of a webpage (not a programming language).
+      </p>
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers understand
+        HTML and render HTML code as websites.
+      </p>
+      <p>In HTML, each element is made up of 3 parts:</p>
+      <ol>
+        <!--<ol> is ordered list-->
+        <li>The opening tag</li>
+        <!-- <li> is the content in list-->
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ol>
+      <!--when we have an elemnt inside another element => child element-->
+      <!-- ol is our parent element-->
+      <!-- li is our child element-->
+      <p>
+        You can learn more at the
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+          >MDN Web Docs.</a
+        >
+      </p>
+      <!--Hyperlinks called anchor in html => <a> -->
+      <!--target="_blank" make the link when we click on it, open it in another tab-->
+
+      <h4>Why should you learn HTML?</h4>
+      <p>
+        There are countless reasons for learning the fundamental language of the
+        web. Here are 5 of them:
+      </p>
+      <ul>
+        <!-- <ul> is bullet-pointed list => unordered list-->
+        <li>To be able to use the fundamental web dev language</li>
+        <li>
+          hand-craft beautiful websites instead of relying on tools like
+          Worpress or Wix
+        </li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+      <p>Hopefully you learned something new here. See you next time!</p>
+    </article>
+
+    <aside>
+      <!--aside element is usually used for some secondary information that compliments the information in main part of the page -->
+      <h4>Related Post</h4>
+      <ul>
+        <li>
+          <img
+            src="img/related-1.jpg"
+            alt="Person programming"
+            width="75"
+            height="75"
+          />
+          <a href="#">How to Learn Web Development</a>
+          <p>By Jonas Schmedtmann</p>
+        </li>
+        <li>
+          <img src="img/related-2.jpg" alt="Lightning" width="75" height="75" />
+          <a href="#">The Unknown Powers of CSS</a>
+          <p>By Jim Dillon</p>
+        </li>
+        <li>
+          <img
+            src="img/related-3.jpg"
+            alt="JavaScript code on a screen"
+            width="75"
+            height="75"
+          />
+          <a href="#">Why JavaScript is Awesome</a>
+          <p>By Matilda</p>
+        </li>
+      </ul>
+    </aside>
+
+    <footer>Copyright &copy; 2027 by The Code Magazine</footer>
+  </body>
+</html>
