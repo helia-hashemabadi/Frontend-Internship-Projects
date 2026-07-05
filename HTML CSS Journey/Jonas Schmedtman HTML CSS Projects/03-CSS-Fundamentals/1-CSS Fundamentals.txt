@@ -1,0 +1,28 @@
+CSS
+ 
+=> Cascading Style Sheets
+=> describes the visual style and presentation of the content written in HTML
+=> HTML consists of alot and different elements 
+=> CSS consists of sountless properties that developers use to format the content
+-> properties about font, text, spacing, layout, etc.
+---------------------------------------
+always start with selector and then applying some style/declaration
+=> declaration/style => property:value; => declaration block
+=> selector + declaration block = CCS rule
+-----------------------------------
+Inline CSS:
+=> writing CSS code inside of the element
+Example: <h1 style="color: blue">The Code Magazine</h1>
+-----------------------------------
+Internal CSS:
+=> we declare the style element in head section
+=>this is not practical when we have a lot of css code
+Example: 
+<style>
+	h1{color:blue}
+</style>
+-----------------------------------
+External CSS:
+=>When we have a lot of CSS code, it is better to 
+write External CSS 
+=> we separate out css code from html code
