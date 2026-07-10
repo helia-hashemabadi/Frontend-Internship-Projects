@@ -61,6 +61,7 @@ Conflicts Between Selectors:
 But when they are conflicting the same declarations => 1.Declarations marked !important 2.Inline Style(Style attribute in HTML) 3.ID Selector 4.Class or pseudo-class Selector 5.Element Selector 6.Universal Selector
 ---------------
 Inheritance and the universal selector
+---------------
 
 
 
