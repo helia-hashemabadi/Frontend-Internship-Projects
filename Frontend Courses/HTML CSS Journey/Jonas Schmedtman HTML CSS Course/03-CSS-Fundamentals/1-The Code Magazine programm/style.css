@@ -112,6 +112,25 @@ li:last-child {
   color: red;
 } */
 
-/* article p:last-child {
+/* Misconception: This won't work */
+article p:first-child {
   color: red;
-} */
+}
+
+/* Styling Links */
+a:link,
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
