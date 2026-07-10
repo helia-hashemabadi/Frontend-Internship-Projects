@@ -56,7 +56,11 @@ when colors in all 3 channels are the same, we get a grey color. There are 256 p
 Example:
 rgb(69,69,69) or #444444 / rgb(183,183,183) or #b7b7b7
 -----------------------
-
+Conflicts Between Selectors:
+1.There are multiple selectors selecting the same element. Class/ID/the element.=> All rules and properties are applied! 
+But when they are conflicting the same declarations => 1.Declarations marked !important 2.Inline Style(Style attribute in HTML) 3.ID Selector 4.Class or pseudo-class Selector 5.Element Selector 6.Universal Selector
+---
+2.
 
 
 
