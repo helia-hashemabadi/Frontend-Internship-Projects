@@ -3,17 +3,18 @@
 /* Separates content (HTML) from presentation (CSS) */
 /* ============================================ */
 
-/* Group selector: Applies same styles to multiple elements at once */
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
-  color: #444444;
+/* Style every single element => Universal */
+* {
+  /* border-top: 10px solid #1098ad; */
 }
 
+body {
+  color: #444444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+}
+
+/* Group selector: Applies same styles to multiple elements at once */
 h1,
 h2,
 h3 {
@@ -94,10 +95,6 @@ aside {
 /* border: It accepts multiple values. It is a shorthand property. */
 /* we just want the border at top and bottom */
 
-/* body {
-  background-color: orangered;
-} */
-
 /* Pseudo Class:  */
 /* .first-li {
   font-weight: bold;
@@ -147,3 +144,7 @@ a:active {
 footer p {
   color: green;
 } */
+
+nav {
+  font-size: 18px;
+}
