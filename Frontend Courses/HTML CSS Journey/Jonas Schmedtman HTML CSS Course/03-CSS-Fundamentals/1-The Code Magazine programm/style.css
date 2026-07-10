@@ -94,6 +94,24 @@ aside {
 /* border: It accepts multiple values. It is a shorthand property. */
 /* we just want the border at top and bottom */
 
-body {
-  /* background-color: orangered; */
+/* body {
+  background-color: orangered;
+} */
+
+/* Pseudo Class:  */
+/* .first-li {
+  font-weight: bold;
+} */
+li:first-child {
+  font-weight: bold;
 }
+li:last-child {
+  font-style: italic;
+}
+/* li:nth-child(even) {
+  color: red;
+} */
+
+/* article p:last-child {
+  color: red;
+} */
