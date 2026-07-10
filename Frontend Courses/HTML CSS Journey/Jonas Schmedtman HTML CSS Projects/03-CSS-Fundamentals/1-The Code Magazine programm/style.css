@@ -36,12 +36,34 @@ li {
 
 /*Combining Selector => Descendant */
 /* The descendant selector targets any element that is inside the specified ancestor, whether it's a direct child, grandchild, or deeper. */
-footer p{
+/* instead of using the elements in Descendant, we can use id or class for each element */
+/* id => #  */
+/* class => . */
+
+/* footer p{
+  font-size: 16px;
+} */
+#copyright{
   font-size: 16px;
 }
 
-header p{
+/* article header p{
   font-style: italic;
+} */
+#author {
+  font-style: italic;
+}
+
+.related-author{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul{
+  list-style: none;
+} */
+.related{
+  list-style: none;
 }
 
 
