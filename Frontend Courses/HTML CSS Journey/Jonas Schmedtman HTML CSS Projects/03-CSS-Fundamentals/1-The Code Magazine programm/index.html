@@ -1,10 +1,11 @@
 <!doctype html>
+<!-- Declares HTML5 version to the browser -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--To link out CSS file to HTML File => <link> element-->
+    <!-- Link external CSS file (best practice for large projects) -->
     <link href="style.css" rel="stylesheet" />
 
     <title>The Basic Language of the Web: HTML</title>
@@ -20,17 +21,15 @@
 
   <body>
     <header>
-      <!--there are 6 hea3dings-->
+      <!--There are 6 Hea3dings-->
       <!--primary heading-->
       <h1>📘 The Code Magazine</h1>
       <!--Inline CSS => writing CSS code inside of the element-->
       <!--<h1 style="color: blue">...</h1>-->
 
-      <!--<nav> is navigation and it is use to putting these links into a group-->
-      <!--<nav> is a container as a parent element-->
+      <!-- <nav> is a Semantic element for navigation links (groups main menu items). It is a container as a parent element -->
       <nav>
-        <!--before we used <div> in every element as a parent and container-->
-        <!-- nowadays we use different elements instead of <div> because of meaning and semantic element after html5 introduce them-->
+        <!-- Before HTML5 we used <div> for everything; now semantic tags like <nav> are preferred (better SEO & accessibility) -->
         <a href="Blog.html">Blog</a>
         <a href="#">Challenges</a>
         <a href="#">Flexbox</a>
@@ -41,7 +40,7 @@
     </header>
 
     <!--semantic html => what that element actually means and what it stands for? -->
-    <!--for example <b> is an element; but <strong> has a meaning and it is semantic element-->
+    <!--for example <b> is an element; but <strong> has the same meaning and it is semantic element-->
 
     <article>
       <header>
@@ -56,8 +55,7 @@
         <p id="author">
           Posted by <b>Laura Jones</b> on Monday, June 21st 2027
         </p>
-        <!--the name is in bold style[<b></b>]-->
-        <!--in HTML5 we should write <strong> instead of <b> for styling sth bold-->
+        <!-- <b> = Bold (visual only). Better to use <strong> (semantic = important content) -->
         <img
           src="img/post-img.jpg"
           alt="HTML code on a screen"
@@ -74,8 +72,7 @@
         technologies: HTML, CSS and JavaScript. These are the languages of the
         web.
       </p>
-      <!--<i> is for styling sth in italic-->
-      <!--in HTML5 we should write <em> instead of <i> for styling sth italic-->
+      <!-- <i> = Italic (visual only). Better to use <em> (semantic = emphasized text) -->
       <p>
         In this post, let's focus on HTML. We will learn what HTML is all about,
         and why you too should learn it.
@@ -95,15 +92,11 @@
       </p>
       <p>In HTML, each element is made up of 3 parts:</p>
       <ol>
-        <!--<ol> is ordered list-->
+        <!-- Ordered List (numbered steps) - parent element is <ol>, children are <li> -->
         <li>The opening tag</li>
-        <!-- <li> is the content in list-->
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
-      <!--when we have an elemnt inside another element => child element-->
-      <!-- ol is our parent element-->
-      <!-- li is our child element-->
       <p>
         You can learn more at the
         <a
@@ -121,7 +114,7 @@
         web. Here are 5 of them:
       </p>
       <ul>
-        <!-- <ul> is bullet-pointed list => unordered list-->
+        <!-- Unordered List (bullet points) - for items without sequence/order -->
         <li>To be able to use the fundamental web dev language</li>
         <li>
           hand-craft beautiful websites instead of relying on tools like
@@ -167,7 +160,8 @@
     </aside>
 
     <footer>
-      <!-- Big difference in IDs and Class: we are not allowed to repeat ID names .... we can use only once-->
+      <!-- ID (#): Unique - can be used only once per page -->
+      <!-- Class (.): Reusable - can be used multiple times -->
       <p id="copyright">Copyright &copy; 2027 by The Code Magazine</p>
     </footer>
   </body>
