@@ -26,3 +26,6 @@ External CSS:
 =>When we have a lot of CSS code, it is better to 
 write External CSS 
 => we separate out css code from html code
+-----------------------------------
+Colors in CSS:
+1.RGB Model => every single color can be represented by a combination of RED, GREEN and BLUE. Each of the 3 base colors can take a value between 0 and 255, which leads to 16.8 million different colors.
