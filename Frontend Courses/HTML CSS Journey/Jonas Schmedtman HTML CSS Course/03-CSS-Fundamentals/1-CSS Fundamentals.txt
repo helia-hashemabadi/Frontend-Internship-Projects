@@ -1,0 +1,61 @@
+# CSS Fundamentals
+
+## What is CSS?
+- **CSS** = Cascading Style Sheets
+- Describes the **visual style** and **presentation** of HTML content
+- Controls: colors, fonts, spacing, layout, positioning, etc.
+
+## CSS Rule Structure
+Selector {
+property: value; /* Declaration */
+}
+- **Selector** + **Declaration Block** = CSS Rule
+-----------------------------------
+Inline CSS:
+=> writing CSS code inside of the element
+Example: <h1 style="color: blue;">Hello</h1>
+-----------------------------------
+Internal CSS:
+=> we declare the style element in head section
+=>this is not practical when we have a lot of css code
+Example: 
+<style>
+	h1{color:blue}
+</style>
+-----------------------------------
+External CSS:
+=>When we have a lot of CSS code, it is better to 
+write External CSS 
+=> we separate out css code from html code
+Example:
+<link href="style.css" rel="stylesheet" /> 
+-----------------------------------
+Colors in CSS:
+** RGB Model => every single color can be represented by a combination of RED, GREEN and BLUE. Each of the 3 base colors can take a value between 0 and 255, which leads to 16.8 million different colors.
+Example: 
+RED = rgb(255,0,0)
+GREEN = rgb(0,255,0)
+BLUE = rgb(0,0,255)
+BLACK= rgb(0,0,0)
+WHITE= rgb(255,255,255)
+Yellow= rgb(255, 255, 0)
+MAGENTA= rgb(255,0,255)
+CYAN= rgb(0,255,255)
+----------------------------
+In CSS we have two ways of writing colors using the RGB Model.
+1. RGB / RGBA Notation : rgb(0-255,0-255,0-255) / rgba(0-255,0-255,0-255,0-255)
+Example: rgb(244,179,63) / rgba(244,179,63,0.7)
+2. Hexadecimal Notation: Instead of using a scale from 0 to 255, we go from 0 to ff (255 in hexadecimal numbers)
+Example:
+RED = #ff0000 GREEN = #00ff00  BLUE = #0000ff BLACK= #000000 WHITE= #ffffff Yellow= #ffff00  MAGENTA= #ff00ff  CYAN= #00ffff
+=>Shorthand, when all colors are identical pairs 
+Example: CYAN= #off 
+-----------------------
+Shades Of Grey:
+when colors in all 3 channels are the same, we get a grey color. There are 256 pure grays to choose from.
+Example:
+rgb(69,69,69) or #444444 / rgb(183,183,183) or #b7b7b7
+-----------------------
+
+
+
