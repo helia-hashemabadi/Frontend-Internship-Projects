@@ -62,6 +62,22 @@ But when they are conflicting the same declarations => 1.Declarations marked !im
 ---------------
 Inheritance and the universal selector
 ---------------
+The CSS Box Model:
+1.Content: Text, images, table, video,......
+Using CSS properties we can specify height and width area...
 
+2.Border: a line around the element, still inside of the element.
 
+3.Padding: invisible space around the content, inside of the element
+empty space that we can create inside the element
+
+4.Margin: space outside of the element, between elements
+
+5.fill area: area that gets filled with background color and background image
+--------------
+Final element width= left Border + left Padding + width + right padding + right Border
+Final element height= top border + top padding + height + bottom padding + bottom border
+--------------
+we can specify all these values using CSS properties
+This is the default behavior, but we can change it
 
