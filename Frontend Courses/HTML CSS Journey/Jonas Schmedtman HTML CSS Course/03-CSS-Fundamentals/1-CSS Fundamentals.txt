@@ -80,4 +80,19 @@ Final element height= top border + top padding + height + bottom padding + botto
 --------------
 we can specify all these values using CSS properties
 This is the default behavior, but we can change it
+-----------
+Different Boxes in html css / Block-level elements
+Elements are formatted visually as Block
+elements occupy 100% of parent element's width, no matter the content
+elements are stacked vertically by default, one after another
+the box-model applies as showed earlier
+
+inline boxes -> blocked boxes 
+
+inline elements:
+occupies only the space necessary for its content
+causes no line-breaks after or before the element
+boc model applies in a different way: heights and widths do not apply
+paddings and margins are applied only horizontally (left and right) 
+
 

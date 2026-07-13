@@ -10,6 +10,7 @@
   padding: 0;
 }
 
+/* PAGE SECTIONS */
 body {
   color: #444444;
   font-family: sans-serif;
@@ -56,6 +57,7 @@ aside {
   width: 500px;
 }
 
+/* SMALLER ELEMENTS */
 /* Group selector: Applies same styles to multiple elements at once */
 h1,
 h2,
@@ -179,6 +181,14 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+nav a:link {
+  background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block;
 }
 
 /* Conflicts between selectors */
