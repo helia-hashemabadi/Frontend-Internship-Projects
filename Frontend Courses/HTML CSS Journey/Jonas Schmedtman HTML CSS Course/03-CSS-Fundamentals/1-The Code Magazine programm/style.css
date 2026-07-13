@@ -16,6 +16,15 @@ body {
   border-top: 10px solid #1098ad;
 }
 
+/* Centering our page with this class */
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+/* margin: top-bottom left-right */
+
 .main-header {
   background-color: #f7f7f7;
   /* padding: 20px;
