@@ -167,10 +167,10 @@ a:hover {
   text-decoration: underline;
 }
 
-/* a:active {
+a:active {
   background-color: black;
   font-style: italic;
-} */
+}
 
 /* Conflicts between selectors */
 /* #copyright {
