@@ -3,29 +3,29 @@
 /* Separates content (HTML) from presentation (CSS) */
 /* ============================================ */
 
-/* Style every single element => Universal */
+/* ----- The Universal Reset ----- */
+/* This targets EVERY element on the page */
+/* Removes default margins and paddings so we start fresh */
 * {
-  /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
 }
 
-/* PAGE SECTIONS */
+/* ----- Styles for the whole page ----- */
 body {
   color: #444444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
 }
 
-/* Centering our page with this class */
+/* ----- The Container (centers everything) ----- */
 .container {
   width: 800px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  margin: 0 auto;
+  margin: 0 auto; /* Centers the box horizontally */
 }
-/* margin: top-bottom left-right */
+/* margin: top/bottom  left/right */
 
+/* ----- Main Header Styles ----- */
 .main-header {
   background-color: #f7f7f7;
   /* padding: 20px;
@@ -33,32 +33,34 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  /* height: 80px; */
 }
-/* shorthand of padding: top-bottom left-right */
+/* padding: top/bottom left/right */
 
+/* ----- Navigation Menu ----- */
 nav {
   font-size: 18px;
 }
 
+/* ----- Article ----- */
 article {
-  margin-bottom: 60px;
+  margin-bottom: 60px; /* Space below the article */
 }
 
 .post-header {
   margin-bottom: 40px;
 }
 
+/* ----- Sidebar (Related Posts) ----- */
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
+  padding: 50px 0; /* Space inside: top/bottom */
   width: 500px;
 }
 
-/* SMALLER ELEMENTS */
-/* Group selector: Applies same styles to multiple elements at once */
+/* ----- Headings (Grouped together) ----- */
+/* This applies the same color to all headings at once */
 h1,
 h2,
 h3,
@@ -89,13 +91,15 @@ h4 {
   text-align: center;
 }
 
+/* ----- Paragraphs ----- */
 p {
   font-size: 22px;
-  line-height: 1.5;
+  line-height: 1.5; /* Space between lines (makes text less cramped) */
   margin-bottom: 15px;
   /* display: inline; */
 }
 
+/* ----- Lists (ordered & unordered) ----- */
 ul,
 ol {
   margin-left: 50px;
@@ -109,29 +113,21 @@ li {
 }
 
 li:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0; /* Remove space after the LAST item */
 }
 
-/*Combining Selector => Descendant */
-/* The descendant selector targets any element that is inside the specified ancestor, whether it's a direct child, grandchild, or deeper. */
-
-/* ID Selector (#): Targets ONE unique element (use only once per page) */
-/* Class Selector (.): Targets MULTIPLE elements (reusable) */
-
-/* footer p{
-  font-size: 16px;
-} */
+/* ----- ID Selector (#) ----- */
+/* IDs are UNIQUE – you can only use them ONCE per page */
 #copyright {
   font-size: 16px;
 }
 
-/* article header p{
-  font-style: italic;
-} */
 #author {
   font-style: italic;
 }
 
+/* ----- Class Selectors (.) ----- */
+/* Classes are REUSABLE – you can use them many times */
 .related-author {
   font-size: 18px;
   font-weight: bold;
@@ -145,78 +141,52 @@ li:last-child {
   list-style: none;
 }
 
-/* border: It accepts multiple values. It is a shorthand property. */
-/* we just want the border at top and bottom */
-
-/* Pseudo Class:  */
-/* .first-li {
-  font-weight: bold;
-} */
+/* ----- Pseudo-Classes (special states) ----- */
 li:first-child {
   font-weight: bold;
 }
+
 li:last-child {
   font-style: italic;
 }
-/* li:nth-child(even) {
-  color: red;
-} */
 
-/* Misconception: This won't work */
-article p:first-child {
-  color: red;
-}
-
-/* Styling Links */
+/* ----- Link Styles ----- */
+/* a:link = normal, unvisited link */
+/* a:visited = link the user has already clicked */
 a:link,
 a:visited {
   color: #1098ad;
-  text-decoration: none;
+  text-decoration: none; /* Removes the default underline */
 }
 
+/* a:hover = when the user HOVERS over the link (mouse on it) */
 a:hover {
   color: orangered;
   font-weight: bold;
   text-decoration: underline;
 }
 
+/* a:active = when the user is CLICKING the link (mouse down) */
 a:active {
   background-color: black;
   font-style: italic;
 }
 
-/* Conflicts between selectors */
-/* #copyright {
-  color: red;
-}
-
-.copyright {
-  color: blue;
-}
-
-footer p {
-  color: green;
-} */
-
+/* ----- Post Image (makes it responsive) ----- */
 .post-img {
   width: 100%;
   height: auto;
 }
+/* This OVERRIDES the inline width="500" we wrote in HTML */
 /* img are inline-block element */
-/*  this 800px is overwriting the 500px that we wrote it in html */
-/* height: auto => */
-/* % in sizes => */
 
+/* ----- Navigation Links (spacing between them) ----- */
 nav a:link {
-  /* background-color: orangered;
-  margin: 20px;
-  padding: 20px; 
-    display:block;
-*/
   margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
 }
+
 nav a:link:last-child {
   margin-right: 0;
 }

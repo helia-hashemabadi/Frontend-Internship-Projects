@@ -5,26 +5,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Link external CSS file (best practice for large projects) -->
+    <!-- Connects this HTML file to the CSS file (best way to style a big project) -->
     <link href="style.css" rel="stylesheet" />
 
     <title>The Basic Language of the Web: HTML</title>
 
     <!--Internal CSS=> we declare the style element in head section-->
-    <!--this is not practical when we have a lot of css code-->
+    <!--this is not practical when we have a lot of css code,okay for tiny projects, but gets messy fast-->
     <!-- <style>
-      h1 {
-        color: blue;
-      }
     </style> -->
   </head>
 
   <body>
+    <!-- This wrapper centers everything on the page-->
     <div class="container">
-      <!-- Centering our page with this class -->
+      <!-- Main header – holds the site title and navigation menu -->
       <header class="main-header">
         <!--There are 6 Headings-->
-        <!--primary heading-->
         <h1>📘 The Code Magazine</h1>
         <!--Inline CSS => writing CSS code inside of the element-->
         <!--<h1 style="color: blue">...</h1>-->
@@ -43,6 +40,7 @@
       <!--semantic html => what that element actually means and what it stands for? -->
       <!--for example <b> is an element; but <strong> has the same meaning and it is semantic element-->
 
+      <!-- The main article (the actual lesson) -->
       <article>
         <header class="post-header">
           <h2>The Basic Language of the Web: HTML</h2>
@@ -68,6 +66,7 @@
           <!-- src is for the importing the image-->
           <!-- alt is for describing the image what is it about-->
         </header>
+
         <p>
           All modern websites and web applications are built using three
           <i>fundamental </i>
