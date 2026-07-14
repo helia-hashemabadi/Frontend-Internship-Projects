@@ -33,7 +33,7 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 /* shorthand of padding: top-bottom left-right */
 
@@ -93,6 +93,7 @@ p {
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 15px;
+  /* display: inline; */
 }
 
 ul,
@@ -104,6 +105,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 li:last-child {
@@ -183,14 +185,6 @@ a:active {
   font-style: italic;
 }
 
-nav a:link {
-  background-color: orangered;
-  margin: 20px;
-  padding: 20px;
-
-  display: block;
-}
-
 /* Conflicts between selectors */
 /* #copyright {
   color: red;
@@ -208,6 +202,21 @@ footer p {
   width: 100%;
   height: auto;
 }
+/* img are inline-block element */
 /*  this 800px is overwriting the 500px that we wrote it in html */
 /* height: auto => */
 /* % in sizes => */
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px; 
+    display:block;
+*/
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}

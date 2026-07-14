@@ -81,18 +81,30 @@ Final element height= top border + top padding + height + bottom padding + botto
 we can specify all these values using CSS properties
 This is the default behavior, but we can change it
 -----------
-Different Boxes in html css / Block-level elements
+Block-level elements
 Elements are formatted visually as Block
 elements occupy 100% of parent element's width, no matter the content
 elements are stacked vertically by default, one after another
 the box-model applies as showed earlier
-
+===========
+default elements: body, main, header, footer, section , nav, aside, div, h1-h6, p, ul, ol, li ,..... 
+With CSS: display:block
+===========
 inline boxes -> blocked boxes 
-
 inline elements:
 occupies only the space necessary for its content
 causes no line-breaks after or before the element
 boc model applies in a different way: heights and widths do not apply
 paddings and margins are applied only horizontally (left and right) 
+===============
+default elements: a, img, strong, em, button, ....
+with CSS: display:inline
+===============
+Inline-Block boxes:
+display: inline-block
+Looks like inline from the outside, behaves like block level on th inside
+Occupies only content's space
+Causes no line-breaks
+Box model applies as showed
 
---------------
+
