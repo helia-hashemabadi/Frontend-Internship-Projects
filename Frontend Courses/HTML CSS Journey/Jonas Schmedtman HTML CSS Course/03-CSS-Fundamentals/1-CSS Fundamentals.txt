@@ -200,5 +200,3 @@ QUICK TIPS FOR BEGINNERS
 7. Test your page in different browsers
 8. Use Chrome DevTools (right-click → Inspect) to experiment
 
-
-TEST2222rgretgrgr
