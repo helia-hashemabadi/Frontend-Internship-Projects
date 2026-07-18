@@ -16,7 +16,7 @@ body {
   color: #444444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
-  position: relative;
+  position: relative; /* Needed for absolute positioning of child elements */
 }
 
 /* ----- The Container (centers everything) ----- */
@@ -75,10 +75,33 @@ h1 {
   font-style: italic;
 }
 
+/* PSEUDO-ELEMENTS (::) – Style a specific part of an element */
+h1::first-letter {
+  font-style: normal; /* Overrides the italic style for the first letter only */
+  margin-right: 5px;
+}
+
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative; /* Needed for the ::after pseudo-element positioning */
 }
+
+/* ::after creates a pseudo-element AFTER the content of h2 */
+h2::after {
+  content: "top"; /* The text that appears */
+  background-color: #ffe70e;
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px; /* Moves it UP and OUTSIDE the heading */
+  right: -25px; /* Moves it to the RIGHT */
+}
+/* Negative values move the element in the OPPOSITE direction */
 
 h3 {
   font-size: 30px;
@@ -142,13 +165,13 @@ li:last-child {
   list-style: none;
 }
 
-/* ----- Pseudo-Classes (special states) ----- */
+/* ----- Pseudo-Classes (:) – Style elements in a special state ----- */
 li:first-child {
-  font-weight: bold;
+  font-weight: bold; /* First list item is bold */
 }
 
 li:last-child {
-  font-style: italic;
+  font-style: italic; /* Last list item is italic */
 }
 
 /* ----- Link Styles ----- */
@@ -189,9 +212,10 @@ nav a:link {
 }
 
 nav a:link:last-child {
-  margin-right: 0;
+  margin-right: 0; /* Remove right margin from the LAST nav link */
 }
 
+/* ----- LIKE BUTTON (Positioned Absolutely) ----- */
 /* This button is placed in the bottom-right corner of the page */
 /* Because the body has position: relative;, the button positions itself relative to the entire page */
 .like-button {

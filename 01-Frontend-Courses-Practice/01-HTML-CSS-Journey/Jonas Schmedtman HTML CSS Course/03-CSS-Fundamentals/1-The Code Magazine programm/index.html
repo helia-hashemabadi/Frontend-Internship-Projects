@@ -10,41 +10,41 @@
 
     <title>The Basic Language of the Web: HTML</title>
 
-    <!--Internal CSS=> we declare the style element in head section-->
-    <!--this is not practical when we have a lot of css code,okay for tiny projects, but gets messy fast-->
+    <!-- INTERNAL CSS: Declared inside <style> tags in the <head> section -->
+    <!-- Not practical for large projects – okay for tiny demos, but gets messy fast -->
     <!-- <style>
     </style> -->
   </head>
 
   <body>
-    <!-- This wrapper centers everything on the page-->
+    <!-- CONTAINER: This wrapper centers everything on the page -->
     <div class="container">
-      <!-- Main header – holds the site title and navigation menu -->
+      <!-- MAIN HEADER: Holds the site title and navigation menu -->
       <header class="main-header">
-        <!--There are 6 Headings-->
+        <!-- There are 6 heading levels in HTML: <h1> to <h6> -->
         <h1>📘 The Code Magazine</h1>
-        <!--Inline CSS => writing CSS code inside of the element-->
+        <!-- INLINE CSS: Written directly inside the element using the "style" attribute -->
         <!--<h1 style="color: blue">...</h1>-->
 
-        <!-- <nav> is a Semantic element for navigation links (groups main menu items). It is a container as a parent element -->
+        <!-- NAV: Semantic element for grouping navigation links -->
+        <!-- Before HTML5, we used <div> for everything – now semantic tags are preferred for better SEO and accessibility -->
         <nav>
-          <!-- Before HTML5 we used <div> for everything; now semantic tags like <nav> are preferred (better SEO & accessibility) -->
           <a href="Blog.html">Blog</a>
           <a href="#">Challenges</a>
           <a href="#">Flexbox</a>
           <a href="#">CSS Grid</a>
         </nav>
-        <!--<a> is an anchor element, but to make it a link,is the href property-->
+        <!-- ANCHOR (<a>): The href attribute makes it a clickable link -->
       </header>
 
-      <!--semantic html => what that element actually means and what it stands for? -->
-      <!--for example <b> is an element; but <strong> has the same meaning and it is semantic element-->
+      <!-- SEMANTIC HTML: Elements that describe their meaning and purpose -->
+      <!-- For example: <b> is presentational (bold), but <strong> is semantic (important content) -->
 
-      <!-- The main article (the actual lesson) -->
+      <!-- ARTICLE: The main content of the page (the actual lesson) -->
       <article>
         <header class="post-header">
           <h2>The Basic Language of the Web: HTML</h2>
-          <!--secondary heading-->
+          <!-- <h2> is a secondary heading -->
           <img
             src="img/laura-jones.jpg"
             alt="A Photo of Laura Jones"
@@ -54,7 +54,7 @@
           <p id="author">
             Posted by <b>Laura Jones</b> on Monday, June 21st 2027
           </p>
-          <!-- <b> = Bold (visual only). Better to use <strong> (semantic = important content) -->
+          <!-- <b> = Bold (visual only) – Better to use <strong> (semantic = important content) -->
           <img
             class="post-img"
             src="img/post-img.jpg"
@@ -62,9 +62,11 @@
             width="500"
             height="200"
           />
-          <!--attributes are pieces of data that we can use to describe data -->
-          <!-- src is for the importing the image-->
-          <!-- alt is for describing the image what is it about-->
+          <!-- ATTRIBUTES: Pieces of data that describe an element -->
+          <!-- src = source path for the image -->
+          <!-- alt = alternative text describing the image (important for accessibility) -->
+
+          <!-- LIKE BUTTON: Placed here, but positioned absolutely with CSS -->
           <button class="like-button">Like❤️</button>
         </header>
 
@@ -74,7 +76,7 @@
           technologies: HTML, CSS and JavaScript. These are the languages of the
           web.
         </p>
-        <!-- <i> = Italic (visual only). Better to use <em> (semantic = emphasized text) -->
+        <!-- <i> = Italic (visual only) – Better to use <em> (semantic = emphasized text) -->
         <p>
           In this post, let's focus on HTML. We will learn what HTML is all
           about, and why you too should learn it.
@@ -94,7 +96,7 @@
         </p>
         <p>In HTML, each element is made up of 3 parts:</p>
         <ol>
-          <!-- Ordered List (numbered steps) - parent element is <ol>, children are <li> -->
+          <!-- ORDERED LIST: Numbered list – used when order/sequence matters -->
           <li>The opening tag</li>
           <li>The closing tag</li>
           <li>The actual element</li>
@@ -107,15 +109,16 @@
             >MDN Web Docs</a
           >.
         </p>
-        <!--Hyperlinks called anchor in html => <a> -->
-        <!--target="_blank" make the link when we click on it, open it in another tab-->
+        <!-- HYPERLINK: <a> with href attribute -->
+        <!-- target="_blank" opens the link in a new tab -->
+
         <h3>Why should you learn HTML?</h3>
         <p>
           There are countless reasons for learning the fundamental language of
           the web. Here are 5 of them:
         </p>
         <ul>
-          <!-- Unordered List (bullet points) - for items without sequence/order -->
+          <!-- UNORDERED LIST: Bullet points – used when order doesn't matter -->
           <li>To be able to use the fundamental web dev language</li>
           <li>
             hand-craft beautiful websites instead of relying on tools like
@@ -129,7 +132,7 @@
       </article>
 
       <aside>
-        <!--aside element is usually used for some secondary information that compliments the information in main part of the page -->
+        <!-- ASIDE: Secondary/supplementary content that complements the main article -->
         <h4>Related Post</h4>
         <ul class="related-post">
           <li>
@@ -165,9 +168,10 @@
         </ul>
       </aside>
 
+      <!-- FOOTER: Copyright and legal information -->
       <footer>
-        <!-- ID (#): Unique - can be used only once per page -->
-        <!-- Class (.): Reusable - can be used multiple times -->
+        <!-- ID (#): Unique identifier – can be used only ONCE per page -->
+        <!-- CLASS (.): Reusable – can be used MULTIPLE times -->
         <p id="copyright">Copyright &copy; 2027 by The Code Magazine</p>
       </footer>
     </div>

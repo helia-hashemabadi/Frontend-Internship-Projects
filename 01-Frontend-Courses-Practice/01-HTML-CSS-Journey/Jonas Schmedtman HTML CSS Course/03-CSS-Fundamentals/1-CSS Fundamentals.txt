@@ -220,4 +220,51 @@ Absolute Positioning (position: absolute;)
 - It's as if the element never existed — surrounding elements will close up and fill its original space.
 - Because it's removed, it can overlap other elements on the page.
 - You use top, right, bottom, and left to place it exactly where you want.
-- Important: These values position the element relative to its nearest positioned ancestor (a parent element that has position: relative;, position: absolute;, or position: fixed;). If there's no such ancestor, it positions itself relative to the entire page (<html>).
+
+============================================
+PSEUDO-ELEMENTS (::)
+============================================
+
+What are they?
+- Pseudo-elements are used to style SPECIFIC PARTS of an element.
+- They are denoted by TWO colons (::) in CSS.
+
+Common pseudo-elements:
+1. ::first-letter  → Styles the first letter of an element
+   Example: p::first-letter { font-size: 200%; }
+
+2. ::first-line    → Styles the first line of an element
+   Example: p::first-line { font-weight: bold; }
+
+3. ::before        → Inserts content BEFORE an element's content
+   Example: h1::before { content: "🔥 "; }
+
+4. ::after         → Inserts content AFTER an element's content
+   Example: h1::after { content: " ✨"; }
+
+5. ::selection     → Styles text when the user selects/highlights it
+   Example: ::selection { background: yellow; }
+
+Important:
+- Pseudo-elements (::) are different from pseudo-classes (:)
+- Pseudo-classes style ELEMENTS IN A STATE (e.g., :hover, :active)
+- Pseudo-elements style PARTS OF AN ELEMENT (e.g., first letter, before content)
+
+============================================
+SIBLING SELECTORS
+============================================
+
+What are siblings?
+- Siblings are elements that share the SAME PARENT.
+- Example: In <ul><li>A</li><li>B</li></ul>, A and B are siblings.
+
+1. Adjacent Sibling Selector (+):
+   Selects an element that comes IMMEDIATELY AFTER another element.
+   Example: h2 + p { color: red; }
+   → Selects a <p> that comes RIGHT AFTER an <h2>
+
+2. General Sibling Selector (~):
+   Selects all elements that come AFTER another element.
+   Example: h2 ~ p { color: blue; }
+   → Selects ALL <p> elements that come AFTER an <h2>
+
