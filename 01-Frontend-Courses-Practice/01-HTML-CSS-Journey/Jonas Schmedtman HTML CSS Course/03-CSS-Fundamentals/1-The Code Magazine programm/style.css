@@ -5,7 +5,7 @@
 
 /* ----- The Universal Reset ----- */
 /* This targets EVERY element on the page */
-/* Removes default margins and paddings so we start fresh */
+/* Removes default margins and paddings so we start with a clean slate */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ body {
   width: 800px;
   margin: 0 auto; /* Centers the box horizontally */
 }
-/* margin: top/bottom  left/right */
+/* Shorthand: margin: top/bottom  left/right */
 
 /* ----- Main Header Styles ----- */
 .main-header {
@@ -35,14 +35,14 @@ body {
   padding: 20px 40px;
   margin-bottom: 60px;
 }
-/* padding: top/bottom left/right */
+/* Shorthand: padding: top/bottom left/right */
 
 /* ----- Navigation Menu ----- */
 nav {
   font-size: 18px;
 }
 
-/* ----- Article ----- */
+/* ----- Article (Main Content) ----- */
 article {
   margin-bottom: 60px; /* Space below the article */
 }
@@ -192,6 +192,8 @@ nav a:link:last-child {
   margin-right: 0;
 }
 
+/* This button is placed in the bottom-right corner of the page */
+/* Because the body has position: relative;, the button positions itself relative to the entire page */
 .like-button {
   font-size: 22px;
   padding: 20px;
