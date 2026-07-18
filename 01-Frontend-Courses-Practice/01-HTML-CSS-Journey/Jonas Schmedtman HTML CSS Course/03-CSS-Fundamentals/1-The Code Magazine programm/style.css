@@ -16,6 +16,7 @@ body {
   color: #444444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 /* ----- The Container (centers everything) ----- */
@@ -189,4 +190,13 @@ nav a:link {
 
 nav a:link:last-child {
   margin-right: 0;
+}
+
+.like-button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }

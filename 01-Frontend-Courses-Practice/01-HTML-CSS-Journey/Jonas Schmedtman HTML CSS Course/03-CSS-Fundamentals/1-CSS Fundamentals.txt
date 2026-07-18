@@ -200,3 +200,24 @@ QUICK TIPS FOR BEGINNERS
 7. Test your page in different browsers
 8. Use Chrome DevTools (right-click → Inspect) to experiment
 
+============================================
+NORMAL FLOW VS. ABSOLUTE POSITIONING
+============================================
+
+Normal Flow:
+- This is the browser's default way of laying out elements.
+- Elements are "in flow" — they appear one after another, exactly in the same order as they are written in your HTML code.
+- Each element takes up its own space and affects the position of the elements that come after it.
+
+(Default positioning) position: relative; :
+- The element stays in the normal flow.
+- Its original space is reserved — even if you move it, nothing else can take that spot.
+- You can use top, right, bottom, and left to nudge it from its original position.
+- Moving it does not affect other elements around it.
+
+Absolute Positioning (position: absolute;)
+- The element is completely removed from the normal flow — it's now "out of flow".
+- It's as if the element never existed — surrounding elements will close up and fill its original space.
+- Because it's removed, it can overlap other elements on the page.
+- You use top, right, bottom, and left to place it exactly where you want.
+- Important: These values position the element relative to its nearest positioned ancestor (a parent element that has position: relative;, position: absolute;, or position: fixed;). If there's no such ancestor, it positions itself relative to the entire page (<html>).
