@@ -84,7 +84,7 @@ So 256 x 256 x 256 = 16.8 MILLION colors!
             #00ff00  = GREEN
             #0000ff  = BLUE
 
-   Shorthand: #f00  = RED (if pairs are the same)
+   Shorthand: #f00  = RED (if pairs are the same, you can shorten #ff0000 to #f00)
 
 Shades of Gray:
    When all 3 colors are equal, you get gray.
@@ -231,19 +231,14 @@ What are they?
 
 Common pseudo-elements:
 1. ::first-letter  → Styles the first letter of an element
-   Example: p::first-letter { font-size: 200%; }
 
 2. ::first-line    → Styles the first line of an element
-   Example: p::first-line { font-weight: bold; }
 
 3. ::before        → Inserts content BEFORE an element's content
-   Example: h1::before { content: "🔥 "; }
 
 4. ::after         → Inserts content AFTER an element's content
-   Example: h1::after { content: " ✨"; }
 
 5. ::selection     → Styles text when the user selects/highlights it
-   Example: ::selection { background: yellow; }
 
 Important:
 - Pseudo-elements (::) are different from pseudo-classes (:)
@@ -268,6 +263,5 @@ What are siblings?
    Example: h2 ~ p { color: blue; }
    → Selects ALL <p> elements that come AFTER an <h2>
 
------------------
 
 

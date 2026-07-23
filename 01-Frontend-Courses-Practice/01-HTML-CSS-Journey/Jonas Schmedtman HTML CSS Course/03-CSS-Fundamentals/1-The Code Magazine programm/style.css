@@ -78,6 +78,7 @@ h1 {
 }
 
 /* PSEUDO-ELEMENTS (::) – Style a specific part of an element */
+/* ::first-letter targets only the first letter of the element */
 h1::first-letter {
   font-style: normal; /* Overrides the italic style for the first letter only */
   margin-right: 5px;
