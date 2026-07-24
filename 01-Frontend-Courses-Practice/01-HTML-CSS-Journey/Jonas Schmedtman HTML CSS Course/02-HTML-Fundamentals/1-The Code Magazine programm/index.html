@@ -7,85 +7,109 @@
   </head>
 
   <body>
+    <!-- ============================================ -->
+    <!-- HEADER: Site header with title and navigation -->
+    <!-- ============================================ -->
     <header>
-      <!--there are 6 hea3dings-->
+      <!-- There are 6 heading levels in HTML: <h1> to <h6> -->
+      <!-- <h1> is the primary/main heading (only ONE per page for SEO) -->
       <h1>The Code Magazine</h1>
-      <!--primary heading-->
-      <!--<nav> is navigation and it is use to putting these links into a group-->
-      <!--<nav> is a container as a parent element-->
+
+      <!-- NAV: Semantic element for grouping navigation links -->
+      <!-- Before HTML5, we used <div> for everything – now semantic tags are preferred for better SEO and accessibility -->
       <nav>
-        <!--before we used <div> in every element as a parent and container-->
-        <!-- nowadays we use different elements instead of <div> because of meaning and semantic element after html5 introduce them-->
         <a href="Blog.html">Blog</a>
         <a href="#">Challenges</a>
         <a href="#">Flexbox</a>
         <a href="#">CSS Grid</a>
+        <!-- ANCHOR (<a>): The href attribute makes it a clickable link -->
+        <!-- href="#" means a placeholder link (doesn't go anywhere) -->
       </nav>
-      <!--<a> is an anchor element, but to make it a link,is the href property-->
     </header>
 
-    <!--semantic html => what that element actually means and what it stands for? -->
-    <!--for example <b> is an element; but <strong> has a meaning and it is semantic element-->
+    <!-- ============================================ -->
+    <!-- SEMANTIC HTML: Elements that describe their meaning -->
+    <!-- For example: <b> is presentational (bold), but <strong> is semantic (important content) -->
+    <!-- ============================================ -->
 
+    <!-- ============================================ -->
+    <!-- ARTICLE: The main content of the page -->
+    <!-- ============================================ -->
+    <!-- ARTICLE HEADER: Contains the post title, author, and main image -->
     <article>
       <header>
         <h2>The Basic Language of the Web: HTML</h2>
-        <!--secondary heading-->
+        <!-- <h2> is a secondary heading -->
+
+        <!-- Author avatar image -->
         <img
           src="img/laura-jones.jpg"
           alt="A Photo of Laura Jones"
           height="50"
           width="50"
         />
+        <!-- ATTRIBUTES: src = source path, alt = alternative text (important for accessibility) -->
+
+        <!-- Author info -->
         <p>Posted by <b>Laura Jones</b> on Monday, June 21st 2027</p>
-        <!--the name is in bold style[<b></b>]-->
-        <!--in HTML5 we should write <strong> instead of <b> for styling sth bold-->
+        <!-- <b> = Bold (visual only) – Better to use <strong> (semantic = important content) -->
+
+        <!-- Main post image -->
         <img
           src="img/post-img.jpg"
           alt="HTML code on a screen"
           width="500"
           height="200"
         />
-        <!--attributes are pieces of data that we can use to describe data -->
-        <!-- src is for the importing the image-->
-        <!-- alt is for describing the image what is it about-->
+        <!-- ATTRIBUTES: src = source path, alt = alternative text -->
+        <!-- width and height define the image dimensions -->
       </header>
+
+      <!-- INTRO PARAGRAPHS -->
       <p>
         All modern websites and web applications are built using three
         <i>fundamental </i>
         technologies: HTML, CSS and JavaScript. These are the languages of the
         web.
       </p>
-      <!--<i> is for styling sth in italic-->
-      <!--in HTML5 we should write <em> instead of <i> for styling sth italic-->
+      <!-- <i> = Italic (visual only) – Better to use <em> (semantic = emphasized text) -->
+
       <p>
         In this post, let's focus on HTML. We will learn what HTML is all about,
         and why you too should learn it.
       </p>
 
+      <!-- <h3> is a tertiary heading -->
       <h3>What is HTML?</h3>
+
       <p>
         HTML stands for <strong>H</strong>yper<strong>T</strong>ext
         <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
         language that web developers use to structure and describe the content
         of a webpage (not a programming language).
       </p>
+      <!-- <strong> is semantic – means "important content" (displays as bold) -->
+
       <p>
         HTML consists of elements that describe different types of content:
         paragraphs, links, headings, images, video, etc. Web browsers understand
         HTML and render HTML code as websites.
       </p>
+
       <p>In HTML, each element is made up of 3 parts:</p>
+
+      <!-- ORDERED LIST: Numbered list – used when order/sequence matters -->
       <ol>
-        <!--<ol> is ordered list-->
+        <!-- <li> = List item (child element of <ol> or <ul>) -->
         <li>The opening tag</li>
-        <!-- <li> is the content in list-->
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
-      <!--when we have an elemnt inside another element => child element-->
-      <!-- ol is our parent element-->
-      <!-- li is our child element-->
+      <!-- PARENT-CHILD RELATIONSHIP: -->
+      <!-- <ol> is the parent element -->
+      <!-- <li> is the child element (nested inside the parent) -->
+
+      <!-- HYPERLINK: Opens MDN Web Docs in a new tab -->
       <p>
         You can learn more at the
         <a
@@ -94,16 +118,19 @@
           >MDN Web Docs.</a
         >
       </p>
-      <!--Hyperlinks called anchor in html => <a> -->
-      <!--target="_blank" make the link when we click on it, open it in another tab-->
+      <!-- ANCHOR (<a>): The href attribute creates a clickable link -->
+      <!-- target="_blank" opens the link in a new browser tab -->
 
       <h4>Why should you learn HTML?</h4>
+      <!-- <h4> is a fourth-level heading -->
+
       <p>
         There are countless reasons for learning the fundamental language of the
         web. Here are 5 of them:
       </p>
+
+      <!-- UNORDERED LIST: Bullet points – used when order doesn't matter -->
       <ul>
-        <!-- <ul> is bullet-pointed list => unordered list-->
         <li>To be able to use the fundamental web dev language</li>
         <li>
           hand-craft beautiful websites instead of relying on tools like
@@ -113,12 +140,16 @@
         <li>To impress friends</li>
         <li>To have fun 😃</li>
       </ul>
+
       <p>Hopefully you learned something new here. See you next time!</p>
     </article>
 
+    <!-- ASIDE: Secondary/supplementary content -->
     <aside>
-      <!--aside element is usually used for some secondary information that compliments the information in main part of the page -->
+      <!-- Aside element is used for secondary information that complements the main content -->
+
       <h4>Related Post</h4>
+
       <ul>
         <li>
           <img
@@ -148,6 +179,8 @@
       </ul>
     </aside>
 
+    <!-- FOOTER: Copyright and legal information -->
     <footer>Copyright &copy; 2027 by The Code Magazine</footer>
+    <!-- &copy; is the HTML entity for the copyright symbol (©) -->
   </body>
 </html>
