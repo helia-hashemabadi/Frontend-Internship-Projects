@@ -6,29 +6,54 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- PRODUCT CARD: Main product container-->
+    <!-- This is the entire product listing as a single card  -->
+    <!-- Using <article> because this is a self-contained product that could be reused anywhere on the site -->
     <article>
+      <!-- PRODUCT TITLE-->
       <h2>Converse Chuck Taylor All Star Low Top</h2>
+
+      <!-- PRODUCT IMAGE-->
       <img
         src="img/challenges.jpg"
         alt="Chuck Taylor All Star Shoe"
         height="250"
         width="250"
       />
+      <!-- ATTRIBUTES:     
+      src = source path to the image file          
+      alt = alternative text (important for accessibility and SEO)
+      height & width = image dimensions in pixels -->
+
+      <!-- PRICE SECTION-->
       <p><strong>$65.00</strong></p>
+      <!-- Shipping information (promotional text) -->
       <p>Free Shipping</p>
+
+      <!-- PRODUCT DESCRIPTION -->
       <p>
         Ready to dress up or down, these classic canvas Chucks are an everyday
         wardrobe staple
       </p>
 
+      <!-- MORE INFORMATION LINK-->
       <a href="https://www.converse.com">More Information &rarr;</a>
+      <!-- ANCHOR (<a>): Creates a clickable link to the official Converse website -->
+      <!-- href = the destination URL -->
+      <!-- &rarr; = HTML entity for the right arrow symbol (→) -->
+      <!-- This link opens in the same tab by default -->
 
+      <!-- PRODUCT DETAILS SECTION-->
       <h3>Product details</h3>
       <ul>
         <li>Lightweight, durable canvas sneaker</li>
         <li>Lightly padded footbed for added comfort</li>
         <li>Iconic Chuck Taylor ankle patch</li>
+        <!-- Each <li> represents one feature of the product -->
       </ul>
+
+      <!-- ADD TO CART BUTTON  -->
+      <!-- BUTTON: Interactive element for adding product to shopping cart -->
       <button>Add to cart</button>
     </article>
   </body>
