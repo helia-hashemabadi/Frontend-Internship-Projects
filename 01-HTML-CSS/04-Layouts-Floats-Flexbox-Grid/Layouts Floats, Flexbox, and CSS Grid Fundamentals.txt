@@ -194,5 +194,37 @@ WHY BORDER-BOX IS BETTER
 4. Used by almost all modern CSS frameworks
    - Bootstrap, Tailwind, etc.
 
+============================================================
+FLEXBOX
+============================================================
+
+Flexbox solved these problems for me:
+   • Vertical centering (was hard with floats!)
+   • Equal-height columns (without hacks!)
+   • Better spacing between items
+Common mistakes I should avoid:
+   • Forgetting to use display: flex on the container
+   • Confusing justify-content (main axis) with align-items (cross axis)
+
+============================================================
+FLEXBOX TERMINOLOGY (Important!)
+============================================================
+
+FLEX CONTAINER (The Parent):
+   • display: flex
+   • gap → space between items without using margins
+   • justify-content → horizontal alignment
+   • align-items → vertical alignment
+   • flex-direction → changes the main axis
+   • flex-wrap → items wrap to a new line if too large
+   • align-content → when there are multiple lines
+   
+FLEX ITEMS (The Children):
+   • align-self → overrides align-items for individual items
+   • flex-grow → allows an item to grow
+   • flex-shrink → allows an item to shrink
+   • flex-basis → defines an item's width (instead of width property)
+   • flex → shorthand for grow, shrink, and basis
+
 
 
