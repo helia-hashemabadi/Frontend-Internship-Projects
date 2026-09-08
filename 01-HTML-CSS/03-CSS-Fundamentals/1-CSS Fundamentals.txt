@@ -1,0 +1,267 @@
+============================================
+CSS FUNDAMENTALS – For Absolute Beginners
+============================================
+
+WHAT IS CSS?
+------------
+CSS = Cascading Style Sheets
+
+It controls how your HTML looks:
+- Colors
+- Fonts
+- Sizes
+- Spacing
+- Layout
+- Everything visual!
+
+Think of HTML as the BONES (structure) and CSS as the CLOTHES (style).
+
+============================================
+CSS RULE STRUCTURE (The Recipe)
+============================================
+
+Every CSS rule has 3 parts:
+
+selector {
+  property: value;   /* One "declaration" */
+}
+
+Example:
+h1 {
+  color: blue;
+}
+=> "Make ALL h1 elements blue"
+
+============================================
+3 WAYS TO ADD CSS
+============================================
+
+1. INLINE CSS (inside the HTML element)
+   - Written directly in the HTML tag using "style"
+   - Example: <h1 style="color: blue;">Hello</h1>
+   - PROS: Quick for testing
+   - CONS: Messy, hard to maintain, not reusable
+
+2. INTERNAL CSS (inside the HTML file)
+   - Written in <style> tags inside <head>
+   - Example:
+     <style>
+       h1 { color: blue; }
+     </style>
+   - PROS: Good for single pages
+   - CONS: Not reusable across pages, gets long and messy
+
+3. EXTERNAL CSS (separate .css file)  ★ BEST PRACTICE ★
+   - CSS in its own file (like style.css)
+   - Linked using <link> in HTML
+   - Example: <link href="style.css" rel="stylesheet" />
+   - PROS: Clean, reusable, easy to update, professional
+   - CONS: You need to remember to link it
+
+============================================
+COLORS IN CSS
+============================================
+
+Every color on your screen is made from RED, GREEN, and BLUE.
+These are called the RGB model.
+
+Each color can be from 0 to 255.
+So 256 x 256 x 256 = 16.8 MILLION colors!
+
+2 ways to write RGB colors:
+
+1. RGB Notation:
+   rgb(red, green, blue)
+   Example: rgb(255, 0, 0)  = RED
+            rgb(0, 255, 0)  = GREEN
+            rgb(0, 0, 255)  = BLUE
+            rgb(0, 0, 0)    = BLACK
+            rgb(255, 255, 255) = WHITE
+
+2. Hexadecimal (shorter, uses letters + numbers):
+   Starts with # then 6 characters
+   Example: #ff0000  = RED
+            #00ff00  = GREEN
+            #0000ff  = BLUE
+
+   Shorthand: #f00  = RED (if pairs are the same, you can shorten #ff0000 to #f00)
+
+Shades of Gray:
+   When all 3 colors are equal, you get gray.
+   Example: rgb(69,69,69) = #444444 (dark gray)
+            rgb(200,200,200) = #c8c8c8 (light gray)
+
+============================================
+SELECTOR CONFLICTS (What happens when two rules target the same element?)
+============================================
+
+When rules conflict, CSS uses a priority system (from highest to lowest):
+
+1. !important (use sparingly!)  ← HIGHEST PRIORITY
+2. Inline style (style="...")
+3. ID selector (#id)
+4. Class selector (.class) or pseudo-class (:hover)
+5. Element selector (h1, p, div)
+6. Universal selector (*)       ← LOWEST PRIORITY
+
+Example:
+If you have:
+  h1 { color: red; }         (element selector)
+  .title { color: blue; }    (class selector)
+  #main-title { color: green; } (ID selector)
+
+The ID wins! So it will be GREEN.
+
+============================================
+THE CSS BOX MODEL (Very Important!)
+============================================
+
+Every element on your page is a BOX. It has 4 layers:
+
+      +-----------------------------------+
+      |         MARGIN (outside)          |  ← Space between elements
+      |   +-----------------------------+ |
+      |   |         BORDER             | |  ← Line around the element
+      |   |   +---------------------+ | |
+      |   |   |      PADDING        | | |  ← Space inside (between border & content)
+      |   |   |   +-------------+ | | | |
+      |   |   |   |  CONTENT    | | | | |  ← The actual text/image
+      |   |   |   +-------------+ | | | |
+      |   |   +---------------------+ | |
+      |   +-----------------------------+ |
+      +-----------------------------------+
+
+Think of it like a picture frame:
+- CONTENT = the photo
+- PADDING = the white mat board
+- BORDER = the frame
+- MARGIN = space between frames on the wall
+
+Final width of element =
+  left border + left padding + width + right padding + right border
+
+Final height of element =
+  top border + top padding + height + bottom padding + bottom border
+
+============================================
+BLOCK-LEVEL ELEMENTS
+============================================
+
+- Take up 100% of the parent's width (even if the content is small)
+- Stack on top of each other (one after another)
+- Full box model applies (width, height, padding, border, margin all work)
+
+Examples:
+  <body>, <header>, <footer>, <section>, <nav>, <aside>,
+  <div>, <h1>–<h6>, <p>, <ul>, <ol>, <li>
+
+CSS: display: block;
+
+============================================
+INLINE ELEMENTS
+============================================
+
+- Only take up as much width as their content needs
+- Do NOT force a new line
+- Box model is LIMITED:
+  - Width and height do NOT work
+  - Padding and margin only work horizontally (left/right)
+
+Examples:
+  <a>, <img>, <strong>, <em>, <button>, <span>
+
+CSS: display: inline;
+
+============================================
+INLINE-BLOCK ELEMENTS (Best of both worlds!)
+============================================
+
+- Looks like inline from the outside (no line break)
+- Behaves like block on the inside (width, height, padding, margin all work)
+
+CSS: display: inline-block;
+
+Great for:
+  - Navigation links
+  - Buttons
+  - Cards
+  - Anything you want next to each other but still style fully
+
+============================================
+QUICK TIPS FOR BEGINNERS
+============================================
+
+1. Use EXTERNAL CSS for all serious projects
+2. Use CLASSES (.) for styling, not IDs (#), unless it's truly unique
+3. Don't use !important – it's a bad habit
+4. Always use "alt" text for images (accessibility)
+5. Use semantic HTML (<header>, <nav>, <article>, <aside>, <footer>) for better structure
+6. Use <strong> and <em> instead of <b> and <i> for meaning, not just style
+7. Test your page in different browsers
+8. Use Chrome DevTools (right-click → Inspect) to experiment
+
+============================================
+NORMAL FLOW VS. ABSOLUTE POSITIONING
+============================================
+
+Normal Flow:
+- This is the browser's default way of laying out elements.
+- Elements are "in flow" — they appear one after another, exactly in the same order as they are written in your HTML code.
+- Each element takes up its own space and affects the position of the elements that come after it.
+
+(Default positioning) position: relative; :
+- The element stays in the normal flow.
+- Its original space is reserved — even if you move it, nothing else can take that spot.
+- You can use top, right, bottom, and left to nudge it from its original position.
+- Moving it does not affect other elements around it.
+
+Absolute Positioning (position: absolute;)
+- The element is completely removed from the normal flow — it's now "out of flow".
+- It's as if the element never existed — surrounding elements will close up and fill its original space.
+- Because it's removed, it can overlap other elements on the page.
+- You use top, right, bottom, and left to place it exactly where you want.
+
+============================================
+PSEUDO-ELEMENTS (::)
+============================================
+
+What are they?
+- Pseudo-elements are used to style SPECIFIC PARTS of an element.
+- They are denoted by TWO colons (::) in CSS.
+
+Common pseudo-elements:
+1. ::first-letter  → Styles the first letter of an element
+
+2. ::first-line    → Styles the first line of an element
+
+3. ::before        → Inserts content BEFORE an element's content
+
+4. ::after         → Inserts content AFTER an element's content
+
+5. ::selection     → Styles text when the user selects/highlights it
+
+Important:
+- Pseudo-elements (::) are different from pseudo-classes (:)
+- Pseudo-classes style ELEMENTS IN A STATE (e.g., :hover, :active)
+- Pseudo-elements style PARTS OF AN ELEMENT (e.g., first letter, before content)
+
+============================================
+SIBLING SELECTORS
+============================================
+
+What are siblings?
+- Siblings are elements that share the SAME PARENT.
+- Example: In <ul><li>A</li><li>B</li></ul>, A and B are siblings.
+
+1. Adjacent Sibling Selector (+):
+   Selects an element that comes IMMEDIATELY AFTER another element.
+   Example: h2 + p { color: red; }
+   → Selects a <p> that comes RIGHT AFTER an <h2>
+
+2. General Sibling Selector (~):
+   Selects all elements that come AFTER another element.
+   Example: h2 ~ p { color: blue; }
+   → Selects ALL <p> elements that come AFTER an <h2>
+
+
+
