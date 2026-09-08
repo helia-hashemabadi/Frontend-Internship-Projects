@@ -44,12 +44,23 @@
         display: flex;
         align-items: center; /* ALIGN ALONG THE CROSS AXIS (Vertical) */
         justify-content: flex-start; /* DISTRIBUTE ALONG THE MAIN AXIS (Horizontal) */
-        gap: 30px; /* Space between items (replaces margin) */
+        gap: 10px; /* Space between items (replaces margin) */
       }
 
       .el {
-        /*margin-right: 30px;*/ /* Previously used, now replaced with gap */
-        /* This class is for shared styles across all items */
+        /*
+        DEFAULTS:
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        */
+
+        /*flex-basis: 200px;*/
+        /*flex-shrink: 0;*/
+        flex: 0 0 200px;
+
+        /*flex-grow: 1;*/
+        /*flex: 1;*/
       }
 
       .el--1 {
