@@ -39,14 +39,15 @@ body {
 }
 
 /* CLEARFIX - Fixes Container Collapse */
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   display: block;
   clear: both;
-}
+} */
 
 .container {
-  /* background-color: red; */
+  display: flex;
+  gap: 40px;
 }
 
 /* ============================================ */
@@ -55,25 +56,28 @@ body {
 
 /* ----- COLUMN 1: Product Image ----- */
 .product-img {
-  float: left;
-  margin-right: 40px;
 }
 
 /* ----- COLUMN 2: Product Info ----- */
 .product-info {
   /* (825 - 8 - 250 -80)/2 */
-  width: 243px;
-  float: left;
-  margin-right: 40px;
+  /* width: 243px; */
   margin-top: 20px;
+  flex: 1; /* Grows to fill available space */
 }
 
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 /* ----- COLUMN 3: Product Details ----- */
 
 .product-details {
-  width: 243px;
-  float: left;
+  /* width: 243px; */
   margin-top: 20px;
+  flex: 1; /* Grows to fill available space */
 }
 
 /* ============================================ */
@@ -83,7 +87,6 @@ body {
 /* ----- PRICE ----- */
 .price {
   font-size: 24px;
-  float: left;
 }
 
 /* ----- SHIPPING TEXT ----- */
@@ -92,9 +95,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
-  float: right;
-  margin-top: 8px;
 }
 
 /* ----- SALE BADGE ----- */
@@ -116,7 +116,6 @@ body {
 
 /* ----- PRODUCT DESCRIPTION ----- */
 .product-description {
-  clear: both;
   margin-bottom: 10px;
 }
 
@@ -138,12 +137,15 @@ body {
 /* ============================================ */
 
 /* ----- COLOR SWATCH BASE ----- */
+.product-color {
+  display: flex;
+  gap: 10px;
+}
+
 .color {
   background-color: #000; /* Default: Black */
   height: 22px;
   width: 22px;
-  display: inline-block; /* Places them side by side */
-  margin-right: 10px;
   cursor: pointer;
 }
 
