@@ -20,6 +20,15 @@ h4 {
   color: #1098ad;
 }
 
+/* ----- ROW (article + aside side by side) ----- */
+
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
 /* ----- The Container (centers everything) ----- */
 .container {
   width: 1300px;
@@ -83,7 +92,7 @@ a:active {
 
 /* ----- Article (Main Content) ----- */
 article {
-  margin-bottom: 60px;
+  flex: 1; /* Grows to fill available space */
 }
 
 .post-header {
@@ -172,6 +181,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 40px; /* Space inside: top/bottom */
+  flex: 0 0 300px; /* === FLEXBOX: Fixed width, no grow, no shrink === */
 }
 
 h4 {
