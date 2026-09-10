@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,13 +36,21 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* CSS GRID */
+        display: grid; /* Turn this into a grid container */
+        grid-template-columns: 240px 240px 150px 150px; /* Define COLUMNS */
+        grid-template-rows: 300px 200px; /* Define ROWS */
+        /* Gap between columns and rows */
+        /* gap:30px; */
+        column-gap: 30px;
+        row-gap: 60px;
       }
 
       .container--2 {
+        display: none; /* Hidden until we practice more */
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
@@ -66,6 +74,7 @@
       <div class="el el--6">(6) languages</div>
       <div class="el el--7">(7) to</div>
       <div class="el el--8">(8) learn</div>
+      <!-- <div class="el el--8">(8) learn</div> -->
     </div>
 
     <div class="container--2">

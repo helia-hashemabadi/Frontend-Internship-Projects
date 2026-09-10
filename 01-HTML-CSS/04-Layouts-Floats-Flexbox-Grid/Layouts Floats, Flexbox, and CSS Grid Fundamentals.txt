@@ -162,7 +162,7 @@ Every element on your page is a BOX. It has 4 layers:
       |   +-----------------------------+ |
       |   |         BORDER             | |  ← Line around the element
       |   |   +---------------------+ | |
-      |   |   |      PADDING        | | |  ← Space inside (between border & content)
+      |   |   |      PADDING        | | |  ← Space inside (between border content)
       |   |   |   +-------------+ | | | |
       |   |   |   |  CONTENT    | | | | |  ← The actual text/image
       |   |   |   +-------------+ | | | | |
@@ -226,5 +226,104 @@ FLEX ITEMS (The Children):
    • flex-basis → defines an item's width (instead of width property)
    • flex → shorthand for grow, shrink, and basis
 
+============================================================
+CSS GRID
+============================================================
+
+CSS Grid is a set of CSS properties for building 2-dimensional layouts.
+The main idea behind CSS Grid is that we divide a container element 
+into rows and columns that can be filled with its child elements.
+
+In 2-dimensional contexts, CSS Grid allows us to write less nested HTML 
+and easier-to-read CSS.
+
+CSS Grid is NOT meant to replace Flexbox! 
+Instead, they work perfectly together:
+  • Need a 1D layout? → Use Flexbox.
+  • Need a 2D layout? → Use CSS Grid. layout? Use flexbox. Need a 2D layout? Use CSS Grid
+
+============================================================
+BASIC CSS GRID TERMINOLOGY
+============================================================
+
+GRID CONTAINER:
+   The parent element with display: grid.
+
+GRID ITEMS:
+   The direct children of the grid container.
+
+ROW AXIS:
+   The horizontal axis (left to right).
+
+COLUMN AXIS:
+   The vertical axis (top to bottom).
+
+============================================================
+MORE CSS GRID TERMINOLOGY
+============================================================
+
+GRID LINES:
+   The lines between rows and columns.
+   - Horizontal lines: number rows (1, 2, 3, ...)
+   - Vertical lines: number columns (1, 2, 3, 4, ...)
+
+GRID TRACK/ROW:
+   The space between two horizontal grid lines.
+
+GRID TRACK/COLUMN:
+   The space between two vertical grid lines.
+
+GUTTERS (GAPS):
+   The empty space between tracks.
+   - Created with: row-gap, column-gap, or gap
+
+GRID CELL:
+   One unit of the grid (intersection of a row and column).
+   Might be filled by a grid item or not.
+
+============================================================
+GRID CONTAINER PROPERTIES
+============================================================
+
+ROW & COLUMN TRACKS:
+   grid-template-rows: <track size>*
+   grid-template-columns: <track size>*
+   
+   Any length unit can be used.
+   The new fr unit fills unused space.
+
+2GAPS:
+   row-gap: 0 | <length>
+   column-gap: 0 | <length>
+   gap: 0 | <length>   ← shorthand
+
+ALIGN ITEMS INSIDE ROWS/COLUMNS:
+   justify-items: stretch | start | center | end
+   align-items: stretch | start | center | end
+   
+   Aligns items inside rows/columns (horizontally/vertically).
+
+ALIGN ENTIRE GRID INSIDE CONTAINER:
+   justify-content: start | center | end | ...
+   align-content: start | center | end | ...
+   
+   Only applies if container is larger than the grid.
+
+============================================================
+GRID ITEM PROPERTIES
+============================================================
+
+PLACE ITEMS IN SPECIFIC CELLS:
+   grid-column: <start line> / <end line> | span <number>
+   grid-row: <start line> / <end line> | span <number>
+   
+   span keyword: span an item across more cells.
+
+OVERRIDE ALIGNMENT FOR SINGLE ITEMS:
+   justify-self: stretch | start | center | end
+   align-self: stretch | start | center | end
 
 
+
+
+ 
