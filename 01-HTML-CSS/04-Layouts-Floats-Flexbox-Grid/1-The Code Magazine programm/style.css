@@ -21,29 +21,34 @@ h4 {
 }
 
 /* ----- ROW (article + aside side by side) ----- */
-
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   margin-bottom: 60px;
-  align-items: flex-start;
-}
+  align-items: flex-start; 
+} */
 
 /* ----- The Container (centers everything) ----- */
 .container {
   width: 1300px;
   margin: 0 auto; /* Centers the box horizontally */
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start; /*align-items: start => aligns items to top */
 }
 
 /* ----- Main Header Styles ----- */
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
-  /* === FLEXBOX: Align items horizontally & vertically === */
   display: flex;
-  align-items: center; /* Vertically centers items */
-  justify-content: space-between; /* Pushes title left, nav right */
+  align-items: center;
+  justify-content: space-between;
+
+  /* grid-column: 1 / -1 */
+  grid-column: 1 / span 2;
 }
 
 h1 {
@@ -92,7 +97,6 @@ a:active {
 
 /* ----- Article (Main Content) ----- */
 article {
-  flex: 1; /* Grows to fill available space */
 }
 
 .post-header {
@@ -127,9 +131,6 @@ h2::after {
   display: flex;
   align-items: center; /* Vertically centers image & text */
   margin-bottom: 15px;
-}
-
-.author-img {
 }
 
 .author {
@@ -181,7 +182,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 40px; /* Space inside: top/bottom */
-  flex: 0 0 300px; /* === FLEXBOX: Fixed width, no grow, no shrink === */
+  /* flex: 0 0 300px; FLEXBOX: Fixed width, no grow, no shrink */
 }
 
 h4 {
@@ -222,4 +223,7 @@ h4 {
 /* ----- Footer ----- */
 .copyright {
   font-size: 16px;
+}
+footer {
+  grid-column: 1 / -1;
 }
