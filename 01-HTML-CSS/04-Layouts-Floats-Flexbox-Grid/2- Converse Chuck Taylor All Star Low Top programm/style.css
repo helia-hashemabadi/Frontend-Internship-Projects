@@ -27,6 +27,10 @@ body {
   width: 825px;
   margin: 50px auto; /* Centers the card horizontally */
   position: relative; /* Required for absolute positioning of .sale */
+
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
 }
 
 /* ----- PRODUCT TITLE ----- */
@@ -36,18 +40,8 @@ body {
   font-size: 22px;
   text-transform: uppercase;
   padding: 15px;
-}
 
-/* CLEARFIX - Fixes Container Collapse */
-/* .clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-} */
-
-.container {
-  display: flex;
-  gap: 40px;
+  grid-column: 1 / -1; /* Spans all columns (first to last line) */
 }
 
 /* ============================================ */
@@ -207,6 +201,8 @@ body {
   cursor: pointer;
   padding: 15px;
   width: 100%; /* Stretches the full width of the product card */
+
+  grid-column: 1 / -1;
 }
 
 /* ----- BUTTON HOVER STATE ----- */
