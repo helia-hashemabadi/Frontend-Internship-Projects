@@ -323,9 +323,54 @@ OVERRIDE ALIGNMENT FOR SINGLE ITEMS:
    justify-self: stretch | start | center | end
    align-self: stretch | start | center | end
 
-----
+============================================================
+GRID ITEM PLACEMENT (Examples)
+============================================================
 
+grid-column: 1 / -1;        → spans entire row (first to last line)
+grid-column: 1 / 4;         → spans columns 1 to 3
+grid-column: 1 / span 3;    → same as above (spans 3 columns)
+grid-column: 2 / 3;         → one column (from line 2 to line 3)
+grid-row: 2;                → shorthand for "2 / 3"
 
+Negative numbers count from the END:
+   -1 = last line
+   -2 = second-to-last line
+
+============================================================
+ALIGNING GRID ITEMS & TRACKS (Important!)
+============================================================
+
+There are THREE different levels of alignment in CSS Grid:
+  1. Aligning the entire grid INSIDE the container
+  2. Aligning items INSIDE their cells
+  3. Overriding alignment for a SINGLE item
+
+------------------------------------------------------------
+ALIGNING THE ENTIRE GRID INSIDE THE CONTAINER
+------------------------------------------------------------
+These properties distribute empty space inside the container.
+Only work if the container is LARGER than the grid.
+   
+   - justify-content: start | center | end | space-between | space-around | space-evenly
+   - align-content:   start | center | end | space-between | space-around | space-evenly
+
+------------------------------------------------------------
+ALIGNING ITEMS INSIDE THEIR CELLS
+------------------------------------------------------------
+These properties move items around INSIDE their own cells.
+
+   - justify-items: stretch | start | center | end
+   - align-items:   stretch | start | center | end
+
+------------------------------------------------------------
+OVERRIDING ALIGNMENT FOR A SINGLE ITEM
+------------------------------------------------------------
+These properties override align-items / justify-items
+for ONE specific item only.
+
+   - justify-self: stretch | start | center | end
+   - align-self:   stretch | start | center | end
 
 
  
