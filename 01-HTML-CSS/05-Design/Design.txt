@@ -111,3 +111,51 @@ Every website has a "personality" that guides design choices.
    • Colors: Colorful and round designs
    • Elements: Hand-drawn icons, animations, fun language
    • Examples: Games, kids' products, creative brands
+
+============================================================
+TYPOGRAPHY (Most Important Part of Design)
+============================================================
+Definition:
+   The art and technique of arranging type to make written language legible, readable, and appealing when displayed.
+
+============================================================
+SERIF VS SANS-SERIF
+============================================================
+SERIF (Traditional, Classic):
+   - Creates a traditional/classic look and feel
+   - Conveys trustworthiness
+   - Good for long text
+   - Examples: Merriweather, Lora, Playfair Display
+
+SANS-SERIF (Modern, Simple):
+   - Modern look and feel
+   - Clean and simple
+   - Easier to choose for beginner designers
+   - Examples: Inter, Roboto, Open Sans, Lato
+
+============================================================
+GOLDEN RULES (Quick Summary)
+============================================================
+1. Use only good and popular typefaces (play it safe).
+2. One typeface per page is enough! Limit to 2 max.
+3. Choose typeface based on website personality:
+   - Elegant → Serif
+   - Modern → Sans-serif
+   - Bold → Heavy typeface
+4. For normal text: use 16px to 32px.
+5. For long text (blog posts): 20px or bigger.
+6. For headlines: 50px+ with weight 600+.
+7. Don't use font weight under 400.
+8. Use less than 75 characters per line.
+9. Line-height for normal text: 1.5 to 2.
+10. For big text: line-height below 1.5.
+11. Decrease letter-spacing in headlines if it looks unnatural.
+12. Usually, don't justify text.
+13. Don't center long text blocks. Small blocks are fine.
+
+============================================================
+TOOLS
+============================================================
+🔗 Google Fonts → fonts.google.com
+🔗 Font Squirrel → fontsquirrel.com
+🔗 Type Scale → typescale.com
