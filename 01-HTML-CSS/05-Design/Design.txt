@@ -1,0 +1,113 @@
+============================================================
+1. WEB DESIGN VS. WEB DEVELOPMENT
+============================================================
+WEB DESIGNER:
+   - Creates the overall look and feel of a website
+   - Focuses on: colors, typography, layout, visual hierarchy
+   - Thinks about: user experience, brand identity, emotions
+WEB DEVELOPER:
+   - Implements the design using HTML, CSS, and JavaScript
+   - Focuses on: code, functionality, performance
+   - Turns the design into a working website
+
+Both roles work together to create a great final product.
+
+============================================================
+2. WHY TAKE DESIGN SERIOUSLY?
+============================================================
+GOOD DESIGN:
+   • Creates an immediate and lasting good impression of the brand
+   • Makes users trust the brand right away
+   • Increases the perceived value of the brand or product
+   • Gives users exactly what they're looking for (e.g., purchasing a product or finding information)
+BAD DESIGN:
+   • Makes users believe the brand doesn't care about their product
+   • Makes users insecure about trusting the brand
+   • Makes the brand or product seem "cheap"
+   • Leaves users confused and makes it hard to reach their goal
+
+Good web design is NOT subjective or purely creative. 
+Everyone can learn the basics by following a framework/system.
+
+============================================================
+3. WEB DESIGN INGREDIENTS
+============================================================
+These are the 10 main ingredients of good web design:
+   1. Typography
+   2. Colors
+   3. Images / Illustrations
+   4. Icons
+   5. Shadows
+   6. Border-radius
+   7. Whitespace
+   8. Visual hierarchy
+   9. Visual experience
+  10. Components / Layout
+Design decisions for each ingredient are based on the website's PERSONALITY (see next section).
+
+============================================================
+4. OVERVIEW OF WEBSITE PERSONALITIES
+============================================================
+Every website has a "personality" that guides design choices.
+
+------------------------------------------------------------
+1. SERIOUS / ELEGANT
+------------------------------------------------------------
+   • For: Luxury and elegance
+   • Typography: Thin serif typefaces
+   • Colors: Golden or pastel colors
+   • Images: Big, high-quality images
+   • Examples: Luxury brands, high-end products
+
+------------------------------------------------------------
+2. MINIMALIST / SIMPLE
+------------------------------------------------------------
+   • For: Focusing on essential text content
+   • Typography: Small or medium-sized sans-serif black text
+   • Colors: Black, white, few colors
+   • Images: Few images and icons
+   • Examples: Google, Stripe, Apple
+
+------------------------------------------------------------
+3. PLAIN / NEUTRAL
+------------------------------------------------------------
+   • For: Design that gets out of the way
+   • Typography: Neutral and small typefaces
+   • Colors: Neutral colors
+   • Layout: Very structured layout
+   • Examples: Big corporations, government sites
+
+------------------------------------------------------------
+4. BOLD / CONFIDENT
+------------------------------------------------------------
+   • For: Making an impact
+   • Typography: Big and bold typography
+   • Colors: Big and bright colored blocks
+   • Examples: Startups, creative agencies
+
+------------------------------------------------------------
+5. CALM / PEACEFUL
+------------------------------------------------------------
+   • For: Products and services that care
+   • Typography: Soft serif headings
+   • Colors: Calming pastel colors
+   • Images: Matching images/illustrations
+   • Examples: Wellness apps, meditation sites
+
+------------------------------------------------------------
+6. STARTUP / UPBEAT
+------------------------------------------------------------
+   • For: Startups and modern products
+   • Typography: Medium-sized sans-serif
+   • Colors: Light-grey text and backgrounds
+   • Elements: Rounded elements
+   • Examples: SaaS products, tech startups
+
+------------------------------------------------------------
+7. PLAYFUL / FUN
+------------------------------------------------------------
+   • For: Fun, creative projects
+   • Typography: Creative fonts
+   • Colors: Colorful and round designs
+   • Elements: Hand-drawn icons, animations, fun language
+   • Examples: Games, kids' products, creative brands
