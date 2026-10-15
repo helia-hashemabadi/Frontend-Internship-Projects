@@ -156,6 +156,126 @@ GOLDEN RULES (Quick Summary)
 ============================================================
 TOOLS
 ============================================================
-🔗 Google Fonts → fonts.google.com
-🔗 Font Squirrel → fontsquirrel.com
-🔗 Type Scale → typescale.com
+   Google Fonts → fonts.google.com
+   Font Squirrel → fontsquirrel.com
+   Type Scale → typescale.com
+
+============================================================
+COLORS
+============================================================
+Definition:
+   Colors are one of the most powerful design ingredients.
+   They convey meaning, set the mood, and guide the user's eye.
+
+============================================================
+1. CHOOSE THE RIGHT COLOR (Match Website Personality)
+============================================================
+Every color conveys a meaning. Choose based on your website's personality:
+RED:
+   - Draws a lot of attention
+   - Symbolizes: power, passion, excitement
+
+ORANGE:
+   - Less aggressive than red
+   - Symbolizes: happiness, cheerfulness, creativity
+
+YELLOW:
+   - Symbolizes: joy, brightness, intelligence
+
+GREEN:
+   - Symbolizes: harmony, nature, growth, health
+
+BLUE:
+   - Symbolizes: peace, trustworthiness, professionalism
+   - Most common color for corporate websites
+
+PURPLE:
+   - Symbolizes: wealth, wisdom, magic
+
+PINK:
+   - Symbolizes: romance, care, affection
+
+BROWN:
+   - Symbolizes: nature, durability, comfort
+
+BLACK:
+   - Symbolizes: power, elegance, minimalism
+   - But also: grief and sorrow
+
+============================================================
+2. USE A GOOD COLOR TONE
+============================================================
+Don't choose a random tone or CSS named colors (like "red", "blue").
+
+Use a proper color system with consistent tones.
+
+Tools for colors:
+   - Open Color
+   - Tailwind CSS Colors
+   - Flat UI Colors 2
+   - Palleton.com
+   - Coolors.co
+
+============================================================
+3. ESTABLISH A COLOR SYSTEM
+============================================================
+Your color palette needs at least TWO types of colors:
+   1. MAIN COLOR   → the primary brand color
+   2. GREY COLOR   → for text, backgrounds, borders
+
+Optional (with more experience):
+   3. ACCENT COLOR → for highlights and special elements
+
+For diversity, create lighter and darker versions:
+   - TINTS (lighter versions)
+   - SHADES (darker versions)
+
+Example palette:
+   MAIN:   teal (with tints and shades)
+   ACCENT: red (with tints and shades)
+   GREY:   dark blue-grey (with tints and shades)
+
+============================================================
+4. WHEN AND HOW TO USE COLORS
+============================================================
+Use your MAIN COLOR to draw attention to the most important elements on the page (buttons, links, highlights).
+
+Use colors to add interesting ACCENTS or make entire components or sections stand out.
+
+You can try to use your color strategically in images and illustrations.
+
+============================================================
+5. COLORS AND TYPOGRAPHY (Important!)
+============================================================
+On dark colored backgrounds, use a TINT of the background color for the text (a lighter version).
+
+Text should usually NOT be completely black. Lighten it up — pure black looks heavy and uninviting.
+
+Don't make text too light! Use a tool to check contrast between text and background.
+   Contrast ratio rules:
+      - 4.5:1 for normal text
+      - 3:1 for large text (18px+)
+
+💡 Use Coolors.co to check contrast ratios.
+
+============================================================
+KEY TAKEAWAYS
+============================================================
+- Color = meaning. Match it to your website's personality.
+- Don't use random colors — use a proper color system.
+- At minimum: 1 main color + 1 grey color.
+- Create tints (lighter) and shades (darker) for diversity.
+- Use main color to draw attention to important elements.
+- Use accents for highlights.
+- Text should not be pure black — lighten it.
+- Always check contrast (4.5:1 for normal, 3:1 for large text).
+- Use tools like Coolors, Tailwind Colors, Open Color.
+
+============================================================
+USEFUL TOOLS
+============================================================
+open Color        → yeun.github.io/open-color/
+Tailwind Colors   → tailwindcss.com/docs/customizing-colors
+Flat UI Colors 2  → flatuicolors.com
+Coolors           → coolors.co
+Palleton           → palleton.com
